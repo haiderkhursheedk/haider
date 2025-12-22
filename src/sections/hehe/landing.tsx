@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="w-full px-8 py-6 sm:px-8">
       <div className="space-y-4 text-base sm:text-lg text-neutral-500">
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 sm:mb-12 mt-4">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 sm:mb-12 mt-12">
           hi i&apos;m haider.
         </h1>
 
@@ -131,7 +131,7 @@ export default function Hero() {
             <p className="text-neutral-500">but, i learned a lot.</p>
           </div>
 
-          <div className="mt-4 flex">
+          <div className="mt-10 flex">
             <Image
               src="https://kurpmqtkgthagnjqmphd.supabase.co/storage/v1/object/public/assets/haider.jpg"
               alt="haider"
