@@ -18,7 +18,7 @@ export default function VideoPlayer() {
     }
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex] = useState(0);
   const [isHovered] = useState(false);
   const [mousePosition] = useState({ x: 0, y: 0 });
 
