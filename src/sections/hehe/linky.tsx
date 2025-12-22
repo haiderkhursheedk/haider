@@ -1,13 +1,12 @@
 "use client";
 import React from "react";
-import { motion } from "motion/react";
 import { LinkPreview } from "@/components/ui/link-preview";
  
 export default function Linky() {
   return (
     <div className="flex flex-col">
       <p className="text-neutral-500">
-          i'm just a guy that loves creating things for others.
+          i&apos;m just a guy that loves creating things for others.
       </p>
 
       <p className="text-neutral-500 mt-4">

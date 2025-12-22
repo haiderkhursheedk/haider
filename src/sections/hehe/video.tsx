@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface Video {
   id: number;
@@ -22,14 +21,6 @@ export default function VideoPlayer() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered] = useState(false);
   const [mousePosition] = useState({ x: 0, y: 0 });
-
-  const handlePrevious = () => {
-    setCurrentIndex((prev) => (prev === 0 ? videos.length - 1 : prev - 1));
-  };
-
-  const handleNext = () => {
-    setCurrentIndex((prev) => (prev === videos.length - 1 ? 0 : prev + 1));
-  };
 
   return (
     <div className="max-w-xl mt-40">  

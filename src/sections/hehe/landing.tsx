@@ -7,12 +7,12 @@ export default function Hero() {
   return (
     <section className="w-full max-w-4xl rounded-[24px] m-8 md:rounded-t-[44px] p-8">
       <div className="text-lg font-regular text-black space-y-4">
-        <h1 className="text-7xl font-bold mb-12">hi i'm haider.</h1>
+        <h1 className="text-7xl font-bold mb-12">hi i&apos;m haider.</h1>
 
         <Video/>
 
         <Linky/>
-        <p className="-mt-2">i'm just a guy that loves creating things for others.</p>
+        {/* <p className="-mt-2">i'm just a guy that loves creating things for others.</p>
         
         <p>i started my first company at 13 when i sold dragon ball z tenkaichi budokai 2 in 2009 on ebay.</p>
         
@@ -35,7 +35,7 @@ export default function Hero() {
         
         <p>some stuff above worked out.</p>
         <p>most of it didn't.</p>
-        <p>but, i learned a lot.</p>
+        <p>but, i learned a lot.</p> */}
       </div>
     </section>
   );
