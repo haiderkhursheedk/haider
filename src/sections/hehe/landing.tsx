@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="w-full px-8 py-6 sm:px-8">
       <div className="space-y-4 text-base sm:text-lg text-neutral-500">
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 sm:mb-12 mt-12">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 sm:mb-12 mt-4">
           hi i&apos;m haider.
         </h1>
 
@@ -94,14 +94,14 @@ export default function Hero() {
           </p>
 
           <p className="text-neutral-500 mt-3 sm:mt-4">
-            now i founded a holding company{" "}
+            now founded a holding company{" "}
             <LinkPreview
               url="https://www.lixtalabs.com/"
               className="font-bold"
             >
               lixta labs,
             </LinkPreview>{" "}
-            building a startups like{" "}
+            building cool startups like{" "}
             <LinkPreview
               url="https://www.lixtanetwork.com/"
               className="font-bold"
