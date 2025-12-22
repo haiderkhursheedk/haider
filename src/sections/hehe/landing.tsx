@@ -2,7 +2,7 @@
 import React from "react";
 import { LinkPreview } from "@/components/ui/link-preview";
 import Image from "next/image";
-import Video from "./Video"
+import Video from "./video"
 export default function Hero() {
   return (
     <section className="w-full px-8 py-6 sm:px-8">
