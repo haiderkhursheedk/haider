@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 
-
 export const metadata: Metadata = {
     title: "haider",
     description: "building cool things",
@@ -15,7 +14,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "haider",
         description: "building cool things",
-        url: "hthttps://www.haiderkhursheed.com/",
+        url: "https://www.haiderkhursheed.com/",
         siteName: "haider",
         images: [
             {
