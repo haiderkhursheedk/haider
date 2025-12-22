@@ -25,7 +25,7 @@ export default function Navbar() {
                                 <FaInstagram className="w-4 h-4" />
                             </a>
                             <a 
-                                href="www.linkedin.com/in/haiderkhursheedk/" 
+                                href="https://www.linkedin.com/in/haiderkhursheedk/" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="text-gray-600 hover:text-gray-600 transition-colors"
