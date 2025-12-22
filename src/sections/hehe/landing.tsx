@@ -127,7 +127,7 @@ export default function Hero() {
 
           <div className="space-y-2 mt-4">
             <p className="text-neutral-500">some stuff above worked out.</p>
-            <p className="text-neutral-500">most of it didn't.</p>
+            <p className="text-neutral-500">most of it didn&apos;t.</p>
             <p className="text-neutral-500">but, i learned a lot.</p>
           </div>
 
