@@ -1,41 +1,156 @@
-import Video from "./video";
-import Linky from "./linky";
-
-
+"use client";
+import React from "react";
+import { LinkPreview } from "@/components/ui/link-preview";
+import Image from "next/image";
+import Video from "./Video"
 export default function Hero() {
-
   return (
-    <section className="w-full max-w-4xl rounded-[24px] m-8 md:rounded-t-[44px] p-8">
-      <div className="text-lg font-regular text-black space-y-4">
-        <h1 className="text-7xl font-bold mb-12">hi i&apos;m haider.</h1>
+    <section className="w-full px-8 py-6 sm:px-8">
+      <div className="space-y-4 text-base sm:text-lg text-neutral-500">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 sm:mb-12 mt-4">
+          hi i&apos;m haider.
+        </h1>
 
-        <Video/>
+        <Video />
 
-        <Linky/>
-        {/* <p className="-mt-2">i'm just a guy that loves creating things for others.</p>
-        
-        <p>i started my first company at 13 when i sold dragon ball z tenkaichi budokai 2 in 2009 on ebay.</p>
-        
-        <p>selling stuff online turned into my high school obsession and i grew that company to $100K in revenue per year by expanding to products like these and these.</p>
-        
-        <p>these days im shipping random stuff and seeing what i want to spend more time on. recently built freeewrite, tidbit, and some other viral stuff.</p>
-        
-        <p>in the past, i was the founder of buildspace — it was the largest school in the world for people working on their own ideas from youtube videos to edm music to companies.</p>
-        
-        <p>during the company we scaled nights & weekends online to over 100,000 students, raised from a16z/yc, constructed a physical campus in sf for those that wanted to go full-time on their ideas, grew content to millions, and built an ai social product to help people find others like themselves trying to build stuff.</p>
-        
-        <p>worked on the co for five years. but, i ended up closing it down. here's a letter i wrote about it.</p>
-        
-        <p>buildspace was special. really special.</p>
-        <p>if you were a fan. thank you. you changed our lives.</p>
-        
-        <p>did a bunch of stuff before.</p>
-        
-        <p>founded an online elementary school called zipschool focused on homeschoolers and grew it to 150,000 kiddos, trained a real time cv model that would coach you in overwatch named visor (we got really big actually, then, blizzard banned us oops), was cto at kanga where we built our own models to recommend gamers content they'd enjoy, trained my own open-source deep learning models for esports analytics, built random products for league of legends that got to 1m+ users, built a dumb ar menu app that got no where, and built a bunch of other random stupid shit that was meaningless but fun (lol).</p>
-        
-        <p>some stuff above worked out.</p>
-        <p>most of it didn't.</p>
-        <p>but, i learned a lot.</p> */}
+        <div className="flex flex-col">
+          <p className="text-neutral-500">
+            i&apos;m just a guy that loves creating things for others.
+          </p>
+
+          <p className="text-neutral-500 mt-3 sm:mt-4">
+            i started my first company at 11 where i build{" "}
+            <LinkPreview
+              url="https://kurpmqtkgthagnjqmphd.supabase.co/storage/v1/object/public/assets/2011.jpg"
+              className="font-bold"
+            >
+              robots
+            </LinkPreview>{" "}
+            and{" "}
+            <LinkPreview
+              url="https://kurpmqtkgthagnjqmphd.supabase.co/storage/v1/object/public/assets/iitbombay.png"
+              className="font-bold"
+            >
+              pitch to iit bombay
+            </LinkPreview>
+            , was a great journey.
+          </p>
+
+          <p className="text-neutral-500 mt-3 sm:mt-4">
+            building stuff online turned into business obsession, that make me
+            build{" "}
+            <LinkPreview
+              url="https://kurpmqtkgthagnjqmphd.supabase.co/storage/v1/object/public/assets/2011.jpg"
+              className="font-bold"
+            >
+              startups
+            </LinkPreview>{" "}
+            later
+          </p>
+
+          <p className="text-neutral-500 mt-3 sm:mt-4">
+            these days im shipping random stuff and seeing what i want to spend
+            more time on. recently{" "}
+            <LinkPreview
+              url="https://www.lixtanetwork.com/"
+              className="font-bold"
+            >
+              lixta network
+            </LinkPreview>
+            ,{" "}
+            <LinkPreview
+              url="https://www.komunity.dev/"
+              className="font-bold"
+            >
+              komunity
+            </LinkPreview>{" "}
+            and some other{" "}
+            <LinkPreview
+              url="https://x.com/khaiderksh/status/1987083399295868940?s=20/"
+              className="font-bold"
+            >
+              viral stuff
+            </LinkPreview>
+            .
+          </p>
+
+          <p className="text-neutral-500 mt-3 sm:mt-4">
+            in the past, i founding a{" "}
+            <LinkPreview
+              url="https://kurpmqtkgthagnjqmphd.supabase.co/storage/v1/object/public/assets/game.webp/"
+              className="font-bold"
+            >
+              game development company,
+            </LinkPreview>{" "}
+            worked with more than 200+ clients across the globe. sold the
+            company to a{" "}
+            <LinkPreview
+              url="https://x.com/khaiderksh/status/1983581870228173087?s=20/"
+              className="font-bold"
+            >
+              game publishing firm in 2023
+            </LinkPreview>
+            .
+          </p>
+
+          <p className="text-neutral-500 mt-3 sm:mt-4">
+            now i founded a holding company{" "}
+            <LinkPreview
+              url="https://www.lixtalabs.com/"
+              className="font-bold"
+            >
+              lixta labs,
+            </LinkPreview>{" "}
+            building a startups like{" "}
+            <LinkPreview
+              url="https://www.lixtanetwork.com/"
+              className="font-bold"
+            >
+              lixta network
+            </LinkPreview>
+            ,{" "}
+            <LinkPreview
+              url="https://www.komunity.dev/"
+              className="font-bold"
+            >
+              komunity
+            </LinkPreview>
+            ,{" "}
+            <LinkPreview
+              url="https://www.100xbrain.in/"
+              className="font-bold"
+            >
+              100xbrain
+            </LinkPreview>{" "}
+            and many more.
+          </p>
+
+          <div className="space-y-2 mt-4">
+            <p className="text-neutral-500">some stuff above worked out.</p>
+            <p className="text-neutral-500">most of it didn't.</p>
+            <p className="text-neutral-500">but, i learned a lot.</p>
+          </div>
+
+          <div className="mt-4 flex">
+            <Image
+              src="https://kurpmqtkgthagnjqmphd.supabase.co/storage/v1/object/public/assets/haider.jpg"
+              alt="haider"
+              width={300}
+              height={300}
+              className="max-w-full h-auto"
+              draggable="false"
+            />
+          </div>
+
+          <div className="mt-6 sm:mt-8 mb-8">
+            <LinkPreview
+              url="https://www.haiderkhursheed.com/"
+              className="font-bold text-3xl sm:text-5xl md:text-7xl text-neutral-500 block"
+            >
+              peace, bye.
+            </LinkPreview>
+          </div>
+        </div>
       </div>
     </section>
   );

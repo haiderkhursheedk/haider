@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 
 
 export const metadata: Metadata = {
-    title: "abdul rehman",
+    title: "haider",
     description: "building cool things",
     
     icons: {
