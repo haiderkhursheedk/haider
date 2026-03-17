@@ -7,14 +7,14 @@ interface Video {
   hoverText: string;
 }
 
-export default function VideoPlayer() {
+export default function VideoPlayer2() {
 
   const videos: Video[] = [
     {
       id: 1,
-      url: 'https://kurpmqtkgthagnjqmphd.supabase.co/storage/v1/object/public/assets/im%20starting%20(again).mp4',
-      title: "it's a billion or a bust",
-      hoverText: 'billion or bust'
+      url: 'https://kurpmqtkgthagnjqmphd.supabase.co/storage/v1/object/public/assets/aeomidotme.mp4',
+      title: "hey, it's aeomi",
+      hoverText: 'aeomi'
     }
   ];
 
@@ -23,7 +23,7 @@ export default function VideoPlayer() {
   const [mousePosition] = useState({ x: 0, y: 0 });
 
   return (
-    <div className="max-w-xl mt-40">
+    <div className="max-w-xl">
       <div className="flex items-center gap-6">
 
         <div className="flex-1">

@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --hostname 0.0.0.0",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint"
   },
   "dependencies": {
     "@calcom/embed-react": "^1.5.2",
@@ -26,6 +26,8 @@
     "clsx": "^2.1.1",
     "daisyui": "^5.1.6",
     "framer-motion": "^11.18.2",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
     "lucide-react": "^0.469.0",
     "mini-svg-data-uri": "^1.4.4",
     "motion": "^11.18.2",

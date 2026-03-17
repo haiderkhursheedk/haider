@@ -3,6 +3,7 @@ import React from "react";
 import { LinkPreview } from "@/components/ui/link-preview";
 import Image from "next/image";
 import Video from "./video"
+import Video2 from "./video2"
 export default function Hero() {
   return (
     <section className="w-full px-8 py-6 sm:px-8">
@@ -115,15 +116,36 @@ export default function Hero() {
             >
               komunity
             </LinkPreview>
-            ,{" "}
-            <LinkPreview
+            {" "}
+            {/* <LinkPreview
               url="https://www.100xbrain.in/"
               className="font-bold"
             >
               100xbrain
-            </LinkPreview>{" "}
+            </LinkPreview>{" "} */}
             and many more.
           </p>
+
+          <p className="text-neutral-500 mt-3 sm:mt-4">
+            in 2026 i got obsessed with memories in artificial intelligent, so i started{" "}
+            <LinkPreview
+              url="https://www.aeomi.me/"
+              className="font-bold"
+            >
+              aeomi,
+            </LinkPreview>{" "}
+          </p>
+
+          <p className="text-neutral-500 mt-3 sm:mt-4">
+            at aeomi, we're building a research lab building intelligence that remembers, understands and evolves with humans. advancing frontier ai focused on human ai collaboration.{" "}
+          </p>
+
+          <div className="mt-12">
+            <Video2 />
+          </div>
+
+
+
 
           <div className="space-y-2 mt-4">
             <p className="text-neutral-500">some stuff above worked out.</p>
