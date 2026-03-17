@@ -137,7 +137,7 @@ export default function Hero() {
           </p>
 
           <p className="text-neutral-500 mt-3 sm:mt-4">
-            at aeomi, we're building a research lab building intelligence that remembers, understands and evolves with humans. advancing frontier ai focused on human ai collaboration.{" "}
+            at aeomi, we&apos;re building a research lab building intelligence that remembers, understands and evolves with humans. advancing frontier ai focused on human ai collaboration.{" "}
           </p>
 
           <div className="mt-12">
