@@ -33,10 +33,10 @@ export default function Page() {
             </div>
 
             <div className="my-10 border-t border-border pt-8">
-                <h2>what i’m doing now</h2>
+                <h2>what i&apos;m doing now</h2>
 
                 <p>
-                    these days i'm building random stuff and seeing what i want to spend more time on. recently <Link href="/projects/lixta-network" className="internal-link">lixta network</Link>, <Link href="/projects/lixta-labs" className="internal-link">lixta labs</Link>, <Link href="/projects/komunity" className="internal-link">komunity</Link>, <Link href="/projects/aeomi" className="internal-link">aeomi</Link> and some other viral stuff.
+                    these days i&apos;m building random stuff and seeing what i want to spend more time on. recently <Link href="/projects/lixta-network" className="internal-link">lixta network</Link>, <Link href="/projects/lixta-labs" className="internal-link">lixta labs</Link>, <Link href="/projects/komunity" className="internal-link">komunity</Link>, <Link href="/projects/aeomi" className="internal-link">aeomi</Link> and some other viral stuff.
                 </p>
 
                 <p>
@@ -108,7 +108,7 @@ export default function Page() {
             <div className="my-10 -mt-6">
                 {/* <h2>one line</h2> */}
                 <p className="italic font-medium text-foreground text-sm">
-                    i build fast, learn faster, and now i’m focused on making one thing actually work.
+                    i build fast, learn faster, and now i&apos;m focused on making one thing actually work.
                 </p>
             </div>
 

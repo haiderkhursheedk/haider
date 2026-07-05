@@ -23,7 +23,7 @@ export default function ReflectionsPage() {
             <ol>
                 <li>- shutting down operations</li>
                 <li>- incorporated my 3rd company, lixta network</li>
-                <li>- scaled it to india's fastest growing creative studio</li>
+                <li>- scaled it to india&apos;s fastest growing creative studio</li>
                 {/* <li>- $5.8M valuation in 2 years</li> */}
                 {/* <li>business gets acquired</li> */}
             </ol>

@@ -27,7 +27,7 @@ export default function LixtaNetworkPage() {
             </div>
 
             <p>
-                lixta network started as an agency. it's now a studio, a model where we don't just work for clients, we build alongside them.
+                lixta network started as an agency. it&apos;s now a studio, a model where we don&apos;t just work for clients, we build alongside them.
             </p>
 
             <p>

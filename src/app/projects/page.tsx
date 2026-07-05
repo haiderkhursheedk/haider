@@ -5,7 +5,7 @@ export default function ProjectsPage() {
         <article className="prose-custom w-full max-w-none pb-16">
             <h1>ventures</h1>
             <p>
-                a running list of everything i've built, am building, or have shut down.
+                a running list of everything i&apos;ve built, am building, or have shut down.
                 most of these are bets on things i believe will matter.
             </p>
 

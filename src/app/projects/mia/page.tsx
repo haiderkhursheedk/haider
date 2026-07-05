@@ -24,7 +24,7 @@ export default function MiaPage() {
                     mia is an ai companion — not just a tool, but something that genuinely builds context around who you are, what you care about, and how you think.
                 </p>
                 <p>
-                    it's built on the <Link href="/projects/aeomi" className="internal-link">aeomi</Link> memory stack, which means every conversation feeds into a growing model of you — your preferences, your patterns, your life.
+                    it&apos;s built on the <Link href="/projects/aeomi" className="internal-link">aeomi</Link> memory stack, which means every conversation feeds into a growing model of you — your preferences, your patterns, your life.
                 </p>
             </div>
 
@@ -33,18 +33,18 @@ export default function MiaPage() {
                 <ul>
                     <li>it remembers — conversations, preferences, patterns</li>
                     <li>it gets more useful over time, not less</li>
-                    <li>it's designed to feel human, not robotic</li>
-                    <li>it's private — your memory stays yours</li>
+                    <li>it&apos;s designed to feel human, not robotic</li>
+                    <li>it&apos;s private — your memory stays yours</li>
                 </ul>
             </div>
 
             <div className="my-10 border-t border-border pt-8">
                 <h2>the longer vision</h2>
                 <p>
-                    people don't need another chatbot. they need something that grows with them.
+                    people don&apos;t need another chatbot. they need something that grows with them.
                 </p>
                 <p>
-                    mia is the first step toward building ai that doesn't just answer questions — but actually understands the person asking them.
+                    mia is the first step toward building ai that doesn&apos;t just answer questions — but actually understands the person asking them.
                 </p>
             </div>
 

@@ -3,7 +3,6 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Sidebar } from "@/components/ui/Sidebar";
-import { InteractiveGraph } from "@/components/ui/InteractiveGraph";
 
 export const metadata: Metadata = {
     title: "haider khursheed",
