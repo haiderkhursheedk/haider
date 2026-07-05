@@ -7,7 +7,7 @@ export default function Page() {
             <h1>about me</h1>
 
             <p>
-                i'm just a guy that loves creating things for others.
+                i&apos;m just a guy that loves creating things for others.
             </p>
 
             <p>

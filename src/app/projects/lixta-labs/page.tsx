@@ -29,7 +29,7 @@ export default function LixtaLabsPage() {
             <div className="my-10 border-t border-border pt-8">
                 <h2>why a holding company</h2>
                 <p>
-                    i'm building multiple bets simultaneously. some will work, some won't. having a clean holding structure means i can operate each independently while sharing resources, infrastructure, and learnings across all of them.
+                    i&apos;m building multiple bets simultaneously. some will work, some won&apos;t. having a clean holding structure means i can operate each independently while sharing resources, infrastructure, and learnings across all of them.
                 </p>
                 <p>
                     it also makes it easier to bring in partners, investors, or acquirers at the individual venture level without complicating everything else.

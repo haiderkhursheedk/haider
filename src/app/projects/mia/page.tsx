@@ -12,7 +12,7 @@ export default function MiaPage() {
             </div>
 
             <p>
-                most ai feels like a search engine. you ask, it answers, you close the tab. there's no relationship. no continuity. no sense that it understands you as a person.
+                most ai feels like a search engine. you ask, it answers, you close the tab. there&apos;s no relationship. no continuity. no sense that it understands you as a person.
             </p>
             <p>
                 mia is built to be different.
