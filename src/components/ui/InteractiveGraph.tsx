@@ -14,7 +14,12 @@ export function InteractiveGraph() {
   const pathname = usePathname();
   const { theme } = useTheme();
   const containerRef = useRef<HTMLDivElement>(null);
-  const fgRef = useRef<any>(null);
+  const fgRef = useRef<{
+    graphData: () => { nodes: (GraphNode & { x: number; y: number })[] };
+    centerAt: (x: number, y: number, duration?: number) => void;
+    d3Force: (forceName: string) => { strength: (val: number) => void; distance: (val: number) => void } | any;
+    zoom: (k: number, duration?: number) => void;
+  } | null>(null);
   const [dimensions, setDimensions] = useState({ width: 288, height: 288 });
 
   useEffect(() => {
@@ -42,7 +47,7 @@ export function InteractiveGraph() {
   const centerOnActiveNode = (duration: number = 400) => {
     if (!fgRef.current) return;
     const gd = fgRef.current.graphData();
-    const activeNode = gd?.nodes?.find((n: any) => n.id === activeNodeId);
+    const activeNode = gd?.nodes?.find((n: GraphNode & { x: number; y: number }) => n.id === activeNodeId);
     if (activeNode) {
       fgRef.current.centerAt(activeNode.x, activeNode.y, duration);
     } else {
@@ -125,7 +130,7 @@ export function InteractiveGraph() {
             nodeId="id"
             nodeVal="val"
             nodeRelSize={1}
-            nodeCanvasObject={(node: any, ctx, globalScale) => {
+            nodeCanvasObject={(node: GraphNode & { x: number; y: number }, ctx, globalScale) => {
               const isActive = node.id === activeNodeId;
               const isNeighbor = highlightedNodes.has(node.id);
               if (!isNeighbor && !isActive) return;
@@ -157,7 +162,7 @@ export function InteractiveGraph() {
               ctx.fillStyle = textColor;
               ctx.fillText(label, node.x, node.y + size + (6 / globalScale));
             }}
-            nodePointerAreaPaint={(node: any, color, ctx) => {
+            nodePointerAreaPaint={(node: GraphNode & { x: number; y: number }, color, ctx) => {
               // This is required to make custom rendered nodes clickable
               const isActive = node.id === activeNodeId;
               const isNeighbor = highlightedNodes.has(node.id);
@@ -170,16 +175,15 @@ export function InteractiveGraph() {
               ctx.arc(node.x, node.y, size, 0, 2 * Math.PI, false);
               ctx.fill();
             }}
-            linkColor={(link: any) => {
+            linkColor={(link: { source: GraphNode; target: GraphNode }) => {
               const isLinkActive = link.source.id === activeNodeId || link.target.id === activeNodeId;
               return isLinkActive ? linkColor : 'transparent';
             }}
             linkWidth={0.5}
             backgroundColor="transparent"
-            onNodeClick={(node: any) => {
-              const n = node as unknown as GraphNode;
-              if (n.path) {
-                router.push(n.path);
+            onNodeClick={(node: GraphNode & { x: number; y: number }) => {
+              if (node.path) {
+                router.push(node.path);
               }
             }}
             d3VelocityDecay={0.3}
