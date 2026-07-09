@@ -108,7 +108,7 @@ export function Sidebar() {
                 </li>
                 <li>
                   <Link
-                    href="/essays/reflections"
+                    href="/essays/reflections-on-selling-my-company"
                     className={`flex items-center py-1.5 text-sm transition-all duration-200 break-words text-wrap
                       ${pathname === '/essays/reflections-on-selling-my-company'
                         ? 'text-foreground underline underline-offset-4 decoration-2 font-medium'

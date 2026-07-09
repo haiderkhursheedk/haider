@@ -7,7 +7,7 @@ export default function EssaysPage() {
             <h1>all essays</h1>
             <p>My writing and reflections.</p>
             <ul>
-                <li><Link href="/essays/reflections" className="internal-link">reflections on selling my company</Link></li>
+                <li><Link href="/essays/reflections-on-selling-my-company" className="internal-link">reflections on selling my company</Link></li>
             </ul>
 
             <div className="mt-8 overflow-hidden border border-border">
