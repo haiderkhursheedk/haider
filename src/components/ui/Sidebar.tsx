@@ -70,8 +70,8 @@ export function Sidebar() {
             <Link
               href="/"
               className={`flex items-center py-2 text-sm font-medium transition-all duration-200 ${pathname === '/'
-                  ? 'text-foreground underline underline-offset-4 decoration-2'
-                  : 'text-muted-foreground hover:text-foreground'
+                ? 'text-foreground underline underline-offset-4 decoration-2'
+                : 'text-muted-foreground hover:text-foreground'
                 }`}
             >
               about me
@@ -110,7 +110,7 @@ export function Sidebar() {
                   <Link
                     href="/essays/reflections"
                     className={`flex items-center py-1.5 text-sm transition-all duration-200 break-words text-wrap
-                      ${pathname === '/essays/reflections'
+                      ${pathname === '/essays/reflections-on-selling-my-company'
                         ? 'text-foreground underline underline-offset-4 decoration-2 font-medium'
                         : 'text-muted-foreground hover:text-foreground'
                       }`}
