@@ -8,7 +8,7 @@ import Footer from "@/components/portfolio/Footer";
 
 export const metadata: Metadata = {
     title: "Haider Khursheed • Entrepreneur & Founder of Lixta Network ",
-    description: "building cool things",
+    description: "Founder and entrepreneur building consumer companies at the intersection of media, technology, and AI. Founder of Lixta Network.",
     icons: {
         icon: [
             { url: '/favicon.ico', sizes: 'any' },
@@ -24,12 +24,12 @@ export const metadata: Metadata = {
 
     openGraph: {
         title: "Haider Khursheed • Entrepreneur & Founder of Lixta Network",
-        description: "building cool things",
+        description: "Founder and entrepreneur building consumer companies at the intersection of media, technology, and AI. Founder of Lixta Network.",
         url: "https://www.haiderkhursheed.com/",
         siteName: "Haider Khursheed • Entrepreneur & Founder of Lixta Network",
         images: [
             {
-                url: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/assets/haider.jpg",
+                url: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/haiderisyours.png",
                 width: 1200,
                 height: 630,
                 alt: "Haider Khursheed • Entrepreneur & Founder of Lixta Network",
@@ -54,6 +54,60 @@ export default function RootLayout({
                 <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet" />
                 <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet" />
                 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet" />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "Person",
+                            "name": "Haider Khursheed",
+                            "jobTitle": "Founder & Entrepreneur",
+                            "worksFor": {
+                                "@type": "Organization",
+                                "name": "Lixta Network",
+                                "url": "https://lixtanetwork.com"
+                            },
+                            "description": "Founder and entrepreneur building consumer companies at the intersection of media, technology, and AI. Founder of Lixta Network.",
+                            "url": "https://haiderkhursheed.com",
+                            "image": "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/haiderisyours.png",
+                            "sameAs": [
+                                "https://www.linkedin.com/in/haiderkhursheedk/",
+                                "https://x.com/khaiderksh/",
+                                "https://www.instagram.com/haiderkhursheedk/",
+                                "https://www.youtube.com/@haiderkhursheedk/"
+                            ],
+                            "knowsAbout": [
+                                "Entrepreneurship",
+                                "Consumer Technology",
+                                "Media Technology",
+                                "Creative Studios",
+                                "Startups"
+                            ],
+                            "founder": [
+                                {
+                                    "@type": "Organization",
+                                    "name": "Lixta Network",
+                                    "url": "https://lixtanetwork.com"
+                                },
+                                {
+                                    "@type": "Organization",
+                                    "name": "Komunity",
+                                    "url": "https://komunity.dev"
+                                },
+                                {
+                                    "@type": "Organization",
+                                    "name": "Home for Builders",
+                                    "url": "https://homeforbuilders.com"
+                                },
+                                {
+                                    "@type": "Organization",
+                                    "name": "Aeomi",
+                                    "url": "https://aeomi.me"
+                                }
+                            ]
+                        })
+                    }}
+                />
             </head>
             <body className={`font-sans bg-black text-neutral-100`}>
                 {/* <SmoothCursor cursor={<MickeyHandCursor />} /> */}
