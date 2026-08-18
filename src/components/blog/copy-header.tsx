@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 interface CopyHeaderProps extends React.HTMLAttributes<HTMLHeadingElement> {
     level: number;
-    children: React.ReactNode;
+    children?: React.ReactNode;
 }
 
 function generateSlug(text: string): string {
