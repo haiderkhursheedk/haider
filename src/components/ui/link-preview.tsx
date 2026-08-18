@@ -17,7 +17,7 @@ export const usePreview = () => ({
 
 export type LinkPreviewProps = {
   children: React.ReactNode;
-  url: string;
+  url?: string;
   className?: string;
   imageSrc?: string;
   caption?: string;
@@ -39,7 +39,7 @@ export const LinkPreview = ({
   isStatic = false,
 }: LinkPreviewProps) => {
   let computedSrc = imageSrc || url;
-  if (!isStatic && !imageSrc && !url.match(/\.(jpeg|jpg|gif|png|webp|svg|jfif)(\?.*)?$/i)) {
+  if (!isStatic && !imageSrc && url && !url.match(/\.(jpeg|jpg|gif|png|webp|svg|jfif)(\?.*)?$/i)) {
     const params = encode({
       url,
       screenshot: true,

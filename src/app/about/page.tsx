@@ -162,7 +162,7 @@ const LORE_TIMELINE: LoreBlock[] = [
 ];
 
 export default function AboutPage() {
-  const [activeImage, setActiveImage] = useState<{ src: string; caption: string } | null>(null);
+  const [, setActiveImage] = useState<{ src: string; caption: string } | null>(null);
 
   return (
     <main className="min-h-screen w-full max-w-4xl mx-auto px-4 sm:px-8 py-4 sm:py-6 font-sans text-neutral-300 mb-2">

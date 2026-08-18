@@ -90,7 +90,6 @@ export default function Hero() {
           <p className="relative sm:ml-0 lg:ml-2 md:ml-2 right-0 text-base sm:text-lg text-neutral-300 drop-shadow-sm">
             I&apos;ve been obsessed with how things work since I was a {" "}
             <LinkPreview
-              url="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/robotsatiit.png"
               imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/robotsatiit.png"
               caption="IIT Bombay, for Techfest (Robowars)"
               className="font-bold text-neutral-900 dark:text-neutral-100 basic-link"
@@ -110,7 +109,6 @@ export default function Hero() {
           In 2021, I enrolled in a diploma program for computer engineering and fell into game development. I ended up founding a
           {" "}
           <LinkPreview
-            url="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/gamedevartpiece.png"
             imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/gamedevartpiece.png"
             caption="Game development studio. scaled games for global clients, acquired by publisher in 2024."
             className="font-bold text-neutral-100 basic-link"
@@ -137,7 +135,7 @@ export default function Hero() {
             <LinkPreview
               url="https://lixtanetwork.com/"
               imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/lixtanetworkcofounders.jpg"
-              caption="Aeomi. frontier AI research lab building intelligence with persistent memory."
+              caption="Haider Khursheed and Abdullah Yasin Shaikh, Cofounders of Lixta Network."
               className="font-bold text-neutral-100 basic-link"
             >
               Lixta Network

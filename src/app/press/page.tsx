@@ -48,23 +48,23 @@ const PHOTOS: Asset[] = [
   },
 ];
 
-const BRAND_LOGOS: Asset[] = [
-  {
-    title: "Lixta Network — Brand Art",
-    meta: "JFIF · High Res",
-    url: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/theart.jfif",
-  },
-  {
-    title: "Home for Builders — Ecosystem",
-    meta: "PNG · High Res",
-    url: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/homeforbuilders.png",
-  },
-  {
-    title: "Game Dev Studio — Artwork",
-    meta: "PNG · High Res",
-    url: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/gamedevartpiece.png",
-  },
-];
+// const BRAND_LOGOS: Asset[] = [
+//   {
+//     title: "Lixta Network — Brand Art",
+//     meta: "JFIF · High Res",
+//     url: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/theart.jfif",
+//   },
+//   {
+//     title: "Home for Builders — Ecosystem",
+//     meta: "PNG · High Res",
+//     url: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/homeforbuilders.png",
+//   },
+//   {
+//     title: "Game Dev Studio — Artwork",
+//     meta: "PNG · High Res",
+//     url: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/gamedevartpiece.png",
+//   },
+// ];
 
 function CopyButton({ text }: { text: string }) {
   const [copied, setCopied] = useState(false);
