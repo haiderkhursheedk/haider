@@ -112,6 +112,24 @@ function CopyButton({ text }: { text: string }) {
   );
 }
 
+const handleDownload = async (url: string, filename: string) => {
+  try {
+    const response = await fetch(url);
+    const blob = await response.blob();
+    const blobUrl = window.URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = blobUrl;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    window.URL.revokeObjectURL(blobUrl);
+  } catch (err) {
+    console.error("Failed to download asset directly:", err);
+    window.open(url, "_blank");
+  }
+};
+
 export default function PressKitPage() {
   return (
     <main className="min-h-screen w-full max-w-4xl mx-auto px-4 sm:px-8 py-4 sm:py-6 font-sans text-neutral-300">
@@ -182,15 +200,18 @@ export default function PressKitPage() {
                     <p className="text-xs text-neutral-400 mt-1">{asset.meta}</p>
                   </div>
                   <div className="pt-2">
-                    <a
-                      href={asset.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      download
-                      className="inline-flex items-center gap-1 text-xs text-blue-400 hover:text-blue-300 hover:underline transition-colors"
+                    <button
+                      type="button"
+                      onClick={() =>
+                        handleDownload(
+                          asset.url,
+                          `${asset.title.toLowerCase().replace(/[^a-z0-9]/g, "-")}.png`
+                        )
+                      }
+                      className="inline-flex items-center gap-1 text-xs text-blue-400 hover:text-blue-300 hover:underline transition-colors cursor-pointer"
                     >
                       Download ↓
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -262,7 +283,7 @@ export default function PressKitPage() {
               href="mailto:haiderkhursheedk@gmail.com"
               className="text-neutral-200 hover:text-white underline underline-offset-4 decoration-neutral-700 hover:decoration-neutral-400 transition-colors"
             >
-              haider@lixtalabs.com
+              haiderkhursheedk@gmail.com
             </a>
 
 

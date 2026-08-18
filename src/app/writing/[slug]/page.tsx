@@ -166,10 +166,10 @@ export default function WritingPostPage({ params }: WritingPostPageProps) {
           )}
 
           <div className="flex flex-col min-w-0">
-            <span className="font-semibold lg:text-5xl md:text-5xl sm:text-lg text-neutral-900 dark:text-neutral-100 group-hover:text-emerald-400 transition-colors">
+            <span className="font-semibold lg:text-5xl md:text-5xl sm:text-md text-neutral-900 dark:text-neutral-100 group-hover:text-emerald-400 transition-colors">
               {article.title}
             </span>
-            <span className="lg:text-md md:text-md sm:text-xs text-neutral-400 max-w-lg mt-4">
+            <span className="lg:text-md md:text-md sm:text-xs text-neutral-400 max-w-lg mt-4 sm:truncate">
               {article.description}
             </span>
           </div>

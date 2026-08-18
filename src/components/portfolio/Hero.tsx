@@ -70,7 +70,7 @@ export default function Hero() {
         </motion.h3>
 
         <motion.p variants={itemVariants}>
-          Hii, I&apos;m Haider Khursheed. I&apos;m a builder and founder who turns wild ideas into fast shipping companies.
+          Hii, I&apos;m Haider Khursheed, a builder and founder who turns wild ideas into fast shipping companies.
         </motion.p>
 
         <motion.div
