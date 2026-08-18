@@ -97,7 +97,7 @@ export default function Hero() {
               kid
             </LinkPreview>
             . At 11, I recorded my first video, it was horrible, but I&apos;m still proud of it.
-            I was the kid who kept asking "why" and "how." While others memorized answers,
+            I was the kid who kept asking &quot;why&quot; and &quot;how&quot;. While others memorized answers,
             I was taking apart machines and building robots.
             I wasn&apos;t the cool kid.
             I was average on paper.
