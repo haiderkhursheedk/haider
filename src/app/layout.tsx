@@ -7,7 +7,7 @@ import Navbar from "@/components/portfolio/Navbar";
 import Footer from "@/components/portfolio/Footer";
 
 export const metadata: Metadata = {
-    title: "haider",
+    title: "Haider Khursheed • Entrepreneur & Founder of Lixta Network ",
     description: "building cool things",
     icons: {
         icon: [
@@ -23,16 +23,16 @@ export const metadata: Metadata = {
     },
 
     openGraph: {
-        title: "haider",
+        title: "Haider Khursheed • Entrepreneur & Founder of Lixta Network",
         description: "building cool things",
         url: "https://www.haiderkhursheed.com/",
-        siteName: "haider",
+        siteName: "Haider Khursheed • Entrepreneur & Founder of Lixta Network",
         images: [
             {
                 url: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/assets/haider.jpg",
                 width: 1200,
                 height: 630,
-                alt: "haider - building cool things",
+                alt: "Haider Khursheed • Entrepreneur & Founder of Lixta Network",
             },
         ],
         type: "website",

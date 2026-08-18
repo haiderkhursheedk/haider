@@ -89,7 +89,7 @@ export default function FindMe() {
         className="flex items-center justify-between mb-4"
       >
         <h2 className="text-lg font-bold tracking-tight text-neutral-900 dark:text-neutral-100 font-sans">
-          Yoo, it's me
+          Yoo, it&apos;s me
         </h2>
         <span className="text-xs text-neutral-400">You can also find me here</span>
       </motion.div>

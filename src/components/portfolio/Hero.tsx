@@ -70,7 +70,7 @@ export default function Hero() {
         </motion.h3>
 
         <motion.p variants={itemVariants}>
-          Hii, I'm Haider Khursheed. I&apos;m a builder and founder who turns wild ideas into fast shipping companies.
+          Hii, I&apos;m Haider Khursheed. I&apos;m a builder and founder who turns wild ideas into fast shipping companies.
         </motion.p>
 
         <motion.div
@@ -88,16 +88,16 @@ export default function Hero() {
             src="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/thebeginning.mp4"
           />
           <p className="relative sm:ml-0 lg:ml-2 md:ml-2 right-0 text-base sm:text-lg text-neutral-300 drop-shadow-sm">
-            I've been obsessed with how things work since I was a {" "}
+            I&apos;ve been obsessed with how things work since I was a {" "}
             <LinkPreview
-              url="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/homeforbuilders.png"
-              imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/homeforbuilders.png"
-              caption="IIT Bombay. on stage with Techfest Robowars team."
+              url="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/robotsatiit.png"
+              imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/robotsatiit.png"
+              caption="IIT Bombay, for Techfest (Robowars)"
               className="font-bold text-neutral-900 dark:text-neutral-100 basic-link"
             >
               kid
             </LinkPreview>
-            . At 11, I recorded my first video, it was horrible, but I'm still proud of it.
+            . At 11, I recorded my first video, it was horrible, but I&apos;m still proud of it.
             I was the kid who kept asking "why" and "how." While others memorized answers,
             I was taking apart machines and building robots.
             I wasn't the cool kid.
@@ -127,8 +127,8 @@ export default function Hero() {
             In August 2024, I met{" "}
             <LinkPreview
               url="https://www.linkedin.com/in/abdullahys24/"
-              imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/haider.jpg"
-              caption="Abdullah. co-founder at Lixta Network, collaborating on ecosystem ventures."
+              imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/thefirstconversation.jpg"
+              caption="The first conversation."
               className="font-bold text-neutral-100 basic-link"
             >
               Abdullah
@@ -136,13 +136,13 @@ export default function Hero() {
             on LinkedIn. We cofounded{" "}
             <LinkPreview
               url="https://lixtanetwork.com/"
-              imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/theart.jfif"
+              imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/lixtanetworkcofounders.jpg"
               caption="Aeomi. frontier AI research lab building intelligence with persistent memory."
               className="font-bold text-neutral-100 basic-link"
             >
               Lixta Network
             </LinkPreview>{" "}
-            , a creative studio that builds brands, websites, and apps for tomorrow's companies, turning manual work into AI-first software. Two years in, we're one of the fastest growing creative studios out of India and now we're pushing into enterprise solutions.{" "}
+            , a creative studio that builds brands, websites, and apps for tomorrow&apos;s companies, turning manual work into AI-first software. Two years in, we're one of the fastest growing creative studios out of India and now we're pushing into enterprise solutions.{" "}
           </p>
           <video
             width={800}
@@ -160,8 +160,8 @@ export default function Hero() {
           In 2025, I ran into a hiring problem. Everyone was polishing resumes instead of showing what they built. So I cofounded {" "}
           <LinkPreview
             url="https://www.komunity.dev/"
-            imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/theart.jfif"
-            caption="Komunity.dev. developer and hacker community for founders."
+            imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/@20journey1.jpg"
+            caption="Komunity, onchain hiring platform based on proof of work."
             className="font-bold text-neutral-900 dark:text-neutral-100 basic-link"
           >
             Komunity
@@ -183,10 +183,10 @@ export default function Hero() {
             src="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/supanova.mp4"
           />
           <p>
-            Currently, I'm focused on scaling{" "}
+            Currently, I&apos;m focused on scaling{" "}
             <LinkPreview
-              url="https://www.lixtalabs.com/"
-              imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/theart.jfif"
+              url="https://www.lixtanetwork.com/"
+              imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/@2026-lixtanetwork.jpg"
               caption="Lixta Network. creative studio"
               className="font-bold text-neutral-900 dark:text-neutral-100 basic-link"
             >
@@ -194,7 +194,7 @@ export default function Hero() {
             </LinkPreview>{" "}
             at enterprise level, becoming more of a engineering and product led company.
             On the side, I am also building Home for Builders (Startup school), Aeomi (AI Research lab).
-            I don't know where this ends. I don't know if we'll make it. I just know I love building things, and I'll do it forever. I hate jobs. I love startups. That's the whole story.
+            I don&apos;t know where this ends. I don&apos;t know if we&apos;ll make it. I just know I love building things, and I&apos;ll do it forever. I hate jobs. I love startups. That&apos;s the whole story.
           </p>
         </motion.div>
 

@@ -132,8 +132,8 @@ export default function WritingPostPage({ params }: WritingPostPageProps) {
     .slice(0, 2);
 
   return (
-    <main className="min-h-screen w-full max-w-4xl mx-auto px-4 sm:px-8 py-6 text-neutral-800 dark:text-neutral-200 transition-colors duration-300 font-sans">
-      <article className="my-8">
+    <main className="min-h-screen w-full max-w-4xl mx-auto px-4 sm:px-8 py-4 sm:py-6 text-neutral-800 dark:text-neutral-200 transition-colors duration-300 font-sans">
+      <article>
         <Link
           href="/writing"
           className="inline-flex items-center gap-1.5 text-xs text-neutral-400 hover:text-emerald-400 transition-colors mb-6"
@@ -190,10 +190,9 @@ export default function WritingPostPage({ params }: WritingPostPageProps) {
         </div>
       </article>
 
-      {/* Read Next Section */}
       {otherArticles.length > 0 && (
         <section className="mt-16 pt-8 border-t border-neutral-800/60">
-          <h2 className="text-sm font-mono text-neutral-400 mb-4 uppercase tracking-wider">
+          <h2 className="text-sm text-neutral-400 mb-4 uppercase tracking-wider">
             Read Next
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -203,7 +202,7 @@ export default function WritingPostPage({ params }: WritingPostPageProps) {
                 href={`/writing/${item.slug}`}
                 className="group p-4 rounded-lg border border-neutral-800/60 hover:border-emerald-500/40 bg-neutral-950/40 hover:bg-neutral-900/40 transition-colors"
               >
-                <div className="flex items-center justify-between text-xs text-neutral-400 font-mono mb-2">
+                <div className="flex items-center justify-between text-xs text-neutral-400 mb-2">
                   <span>{item.date}</span>
                   <ArrowUpRight className="w-3.5 h-3.5 group-hover:text-emerald-400 transition-colors" />
                 </div>

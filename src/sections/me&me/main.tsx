@@ -3,8 +3,6 @@
 import React from "react";
 import HeaderControls from "@/components/portfolio/HeaderControls";
 import ExperienceGrid from "@/components/portfolio/ExperienceGrid";
-import PhotoShelf from "@/components/portfolio/PhotoShelf";
-import ShippingTable from "@/components/portfolio/ShippingTable";
 import Hero from "@/components/portfolio/Hero";
 import { PreviewProvider } from "@/components/ui/link-preview";
 import { motion } from "framer-motion";
@@ -12,8 +10,6 @@ import OnStage from "@/components/portfolio/OnStageTable";
 import WritingTable from "@/components/portfolio/WritingTable";
 import type { WritingArticle } from "@/lib/writing";
 import FindMe from "@/components/portfolio/FindMeTable";
-import ExperienceTable from "@/components/portfolio/ExperienceTable";
-import Navbar from "@/components/portfolio/Navbar";
 
 interface LandingProps {
   writingArticles: WritingArticle[];

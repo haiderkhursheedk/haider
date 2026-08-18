@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
-import { X } from "lucide-react";
+import { motion } from "framer-motion";
 
 interface MomentCard {
   src: string;
@@ -21,94 +20,56 @@ const LORE_TIMELINE: LoreBlock[] = [
   {
     age: "@11",
     points: [
-      { text: "started coding. python. no tutorials." },
-      { text: "quit football. keyboard > ball." },
-      { text: "recorded first video. horrible quality, but obsessed." },
+      { text: "Started exploring robotics. No tutorials, just raw curiosity." },
+      { text: "Sold pens, wrote books, rented my cycle to others. Always had an entrepreneurial streak." },
+      { text: "Recorded my first video. Horrible quality, but I was obsessed." },
     ],
     images: [
       {
         src: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/@11-12journey1.jpg",
-        caption: "Robowars @ 11",
+        caption: "First ever robotics event",
         rotate: "-2deg",
       },
       {
         src: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/Screenshot%202026-08-18%20015329.png",
-        caption: "First Robotics Setup",
+        caption: "First video i shoot",
         rotate: "2deg",
       },
     ],
   },
-
   {
-    age: "@13",
+    age: "@12",
     points: [
-      { text: "built my first game inside a mobile app that let you build games within a game." },
-      { text: "always curious about how machines and software works." },
-
+      { text: "Played games, recorded them, and posted on my YouTube channel." },
+      { text: "Built my first game inside a mobile app that let you create games within a game." },
+      { text: "Always curious about how machines and software work." },
+      { text: "Built small robots and machines as a hobby." },
+      { text: "Documented everything on my second YouTube channel. Still have it, but it's a bit embarrassing to share now." },
     ],
     images: [
       {
         src: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/iitbombay.png",
-        caption: "First Web Client Days",
+        caption: "The IIT Bombay visit",
         rotate: "-3deg",
       },
       {
         src: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/robotsatiit.png",
-        caption: "Early Workstation",
+        caption: "Me at Techfest for robowars",
         rotate: "1deg",
       },
     ],
   },
-  // {
-  //   age: "@14",
-  //   points: [
-  //     { text: "dove into AI/ML. years before chatgpt made it cool." },
-  //     { text: "agency scaled across 3 countries: US / UK / India." },
-  //   ],
-  //   images: [
-  //     {
-  //       src: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/alumniconnectseriesatarkp.jpg",
-  //       caption: "Cross-border Agency",
-  //       rotate: "-1deg",
-  //     },
-  //     {
-  //       src: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/theart.jfif",
-  //       caption: "Early AI Exploration",
-  //       rotate: "3deg",
-  //     },
-  //   ],
-  // },
-  // {
-  //   age: "@15",
-  //   points: [
-  //     { text: "founded game dev studio. enterprise workforce intelligence." },
-  //     { text: "first real team. managed people older than me." },
-  //     { text: "first enterprise contract signed at 15." },
-  //   ],
-  //   images: [
-  //     {
-  //       src: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/game.webp",
-  //       caption: "Game Studio Days",
-  //       rotate: "-2deg",
-  //     },
-  //     {
-  //       src: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/gamedevartpiece.png",
-  //       caption: "First Team & Contracts",
-  //       rotate: "2deg",
-  //     },
-  //   ],
-  // },
   {
     age: "@16",
     points: [
-      { text: "got into diploma for computer engineering." },
-      { text: "started learning coding and design." },
-      { text: "founded a game dev studio." },
+      { text: "Enrolled in a diploma program for Computer Engineering." },
+      { text: "Started learning coding and design seriously." },
+      { text: "Founded my first game development studio." },
     ],
     images: [
       {
         src: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/@16journey1.jpg",
-        caption: "First game i made",
+        caption: "First Game I Made",
         rotate: "-3deg",
       },
       {
@@ -121,19 +82,19 @@ const LORE_TIMELINE: LoreBlock[] = [
   {
     age: "@18",
     points: [
-      { text: "scaled studio with global clients." },
-      { text: "studio got acquired by a game publisher in mid-2024. studio didn't scale much. best decision." },
-      { text: "learn some ethical hacking." },
+      { text: "Scaled the studio with global clients." },
+      { text: "Studio got acquired by a game publisher in mid-2024. It didn't scale much, but it was the best decision I made." },
+      { text: "Learned some ethical hacking on the side." },
     ],
     images: [
       {
         src: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/@18journey01.jpg",
-        caption: "Lixta Network Co-founded",
+        caption: "One of the multiple games we built",
         rotate: "-2deg",
       },
       {
         src: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/gamedevartpiece.png",
-        caption: "Studio Acquisition Moment",
+        caption: "Moments before, Studio Acquisition",
         rotate: "3deg",
       },
     ],
@@ -141,19 +102,19 @@ const LORE_TIMELINE: LoreBlock[] = [
   {
     age: "@19",
     points: [
-      { text: "met Abdullah on LinkedIn. co-founded ", link: "https://lixtanetwork.com", linkText: "Lixta Network" },
-      { text: "turned manual workflows into AI-first software. fast growing creative studio." },
-      { text: "started attending tech event." },
+      { text: "Met Abdullah on LinkedIn. Co-founded ", link: "https://lixtanetwork.com", linkText: "Lixta Network" },
+      { text: "Turned manual workflows into AI-first software. Built a fast-growing creative studio." },
+      { text: "Started attending tech events and networking." },
     ],
     images: [
       {
         src: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/@19journey1.jpg",
-        caption: "Home for Builders",
+        caption: "Lixta Network Co-Founded",
         rotate: "-2deg",
       },
       {
         src: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/@19journey2.jpg",
-        caption: "5,000+ Commits & Beyond",
+        caption: "The first Lixta Network HQ",
         rotate: "2deg",
       },
     ],
@@ -161,19 +122,19 @@ const LORE_TIMELINE: LoreBlock[] = [
   {
     age: "@20",
     points: [
-      { text: "co-founded Komunity.dev—onchain hiring platform for builders.", link: "https://komunity.dev", linkText: "Komunity.dev" },
-      { text: "raised pre-seed round at ₹12.9M valuation. 1,000+ users." },
-      { text: "classic mistake: scaled before PMF. shut it down. learned more from failure than any win." },
+      { text: "Co-founded Komunity, an onchain hiring platform for builders.", link: "https://komunity.dev", linkText: "Komunity.dev" },
+      { text: "Raised a pre-seed round at ₹12.9M valuation. Scaled to 1,000+ users." },
+      { text: "Classic mistake: scaled before product-market fit. Shut it down. Learned more from failure than any win." },
     ],
     images: [
       {
         src: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/@20journey1.jpg",
-        caption: "Home for Builders",
+        caption: "Komunity cofounders",
         rotate: "-2deg",
       },
       {
         src: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/@20journey2.jpg",
-        caption: "5,000+ Commits & Beyond",
+        caption: "Moments while building komunity",
         rotate: "2deg",
       },
     ],
@@ -181,19 +142,19 @@ const LORE_TIMELINE: LoreBlock[] = [
   {
     age: "@21",
     points: [
-      { text: "scaling Lixta Network to enterprise level as an engineering & product company." },
-      { text: "building Home for Builders (startup school) & Aeomi (AI research lab).", link: "https://homeforbuilders.com", linkText: "Home for Builders" },
-      { text: "5,000+ commits this year. while running companies. hate jobs. love startups." },
+      { text: "Scaling Lixta Network to an enterprise-level engineering and product company." },
+      { text: "Building Home for Builders (startup school) & Aeomi (AI research lab).", link: "https://homeforbuilders.com", linkText: "Home for Builders" },
+      { text: "6,687 commits this year, while running companies. Hate jobs, love startups." },
     ],
     images: [
       {
         src: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/buildandgrow2.0hackathon.jpg",
-        caption: "Home for Builders",
+        caption: "One of the mentoring session",
         rotate: "-2deg",
       },
       {
         src: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/hfbartpiece.jpg",
-        caption: "5,000+ Commits & Beyond",
+        caption: "The Home for Builders effect",
         rotate: "2deg",
       },
     ],
