@@ -4,14 +4,14 @@ import React, { useState, useEffect, useRef } from "react";
 import { Volume2, VolumeX } from "lucide-react";
 import { motion } from "framer-motion";
 
-interface HeaderControlsProps {
-  onOpenCmd?: () => void;
-  onOpenTerm?: () => void;
-}
+// interface HeaderControlsProps {
+//   onOpenCmd?: () => void;
+//   onOpenTerm?: () => void;
+// }
 
 const AUDIO_SRC = "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/canyouhearthemusic.mp3";
 
-export default function HeaderControls({ onOpenCmd: _onOpenCmd, onOpenTerm: _onOpenTerm }: HeaderControlsProps) {
+export default function HeaderControls() {
   const [soundEnabled, setSoundEnabled] = useState<boolean>(false);
   const [age, setAge] = useState<string>("");
   const audioRef = useRef<HTMLAudioElement | null>(null);

@@ -99,7 +99,7 @@ export default function Hero() {
             . At 11, I recorded my first video, it was horrible, but I&apos;m still proud of it.
             I was the kid who kept asking "why" and "how." While others memorized answers,
             I was taking apart machines and building robots.
-            I wasn't the cool kid.
+            I wasn&apos;t the cool kid.
             I was average on paper.
             But I was always curious.
           </p>
@@ -140,7 +140,7 @@ export default function Hero() {
             >
               Lixta Network
             </LinkPreview>{" "}
-            , a creative studio that builds brands, websites, and apps for tomorrow&apos;s companies, turning manual work into AI-first software. Two years in, we're one of the fastest growing creative studios out of India and now we're pushing into enterprise solutions.{" "}
+            , a creative studio that builds brands, websites, and apps for tomorrow&apos;s companies, turning manual work into AI-first software. Two years in, we&apos;re one of the fastest growing creative studios out of India and now we&apos;re pushing into enterprise solutions.{" "}
           </p>
           <video
             width={800}
@@ -164,7 +164,7 @@ export default function Hero() {
           >
             Komunity
           </LinkPreview>{" "}
-          , an onchain hiring platform where your work becomes your identity. We raised a pre-seed round at a ₹12.9M pre-money valuation, hit 1,000 users, and made some revenue. But by April 2026, I realized we'd failed on distribution and product-market fit. We spent a year building, got traction, then made the classic mistake of scaling before nailing early adopters. We shut it down. I learned more from that failure than from any win.        </motion.p>
+          , an onchain hiring platform where your work becomes your identity. We raised a pre-seed round at a ₹12.9M pre-money valuation, hit 1,000 users, and made some revenue. But by April 2026, I realized we&apos;d failed on distribution and product-market fit. We spent a year building, got traction, then made the classic mistake of scaling before nailing early adopters. We shut it down. I learned more from that failure than from any win.        </motion.p>
 
         <motion.div
           variants={itemVariants}
@@ -195,71 +195,6 @@ export default function Hero() {
             I don&apos;t know where this ends. I don&apos;t know if we&apos;ll make it. I just know I love building things, and I&apos;ll do it forever. I hate jobs. I love startups. That&apos;s the whole story.
           </p>
         </motion.div>
-
-        {/* <motion.div
-          variants={itemVariants}
-          className="relative flex flex-col sm:flex-row items-center gap-4 sm:gap-6 overflow-hidden"
-        >
-          <video
-            width={800}
-            height={160}
-            className="w-40 h-40 object-cover shrink-0 lg:block md:block sm:hidden"
-            autoPlay
-            loop
-            muted
-            playsInline
-            src="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/thebeginning.mp4"
-          />
-          <p>
-            now we are trying to holding umberlla at{" "}
-            <LinkPreview
-              url="https://www.lixtalabs.com/"
-              imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/theart.jfif"
-              caption="Lixta Labs holding co. building ecosystem startups and high-impact technology."
-              className="font-bold text-neutral-900 dark:text-neutral-100 basic-link"
-            >
-              lixta labs
-            </LinkPreview>
-            , building ecosystem startups like{" "}
-            <LinkPreview
-              url="https://www.lixtanetwork.com/"
-              imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/iitbombay.png"
-              caption="Lixta Network. venture studio co-founded with Abdullah."
-              className="font-bold text-neutral-900 dark:text-neutral-100 basic-link"
-            >
-              lixta network,
-            </LinkPreview>{" "}
-            {" "}
-            <LinkPreview
-              url="https://www.komunity.dev/"
-              imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/gamedevartpiece.png"
-              caption="Komunity.dev. developer and hacker community for founders."
-              className="font-bold text-neutral-900 dark:text-neutral-100 basic-link"
-            >
-              komunity,
-            </LinkPreview>{" "}
-            <LinkPreview
-              url="https://www.komunity.dev/"
-              imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/gamedevartpiece.png"
-              caption="Komunity.dev. developer and hacker community for founders."
-              className="font-bold text-neutral-900 dark:text-neutral-100 basic-link"
-            >
-              aeomi
-            </LinkPreview>{" "}
-            and{" "}
-            <LinkPreview
-              url="https://www.komunity.dev/"
-              imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/gamedevartpiece.png"
-              caption="Komunity.dev. developer and hacker community for founders."
-              className="font-bold text-neutral-900 dark:text-neutral-100 basic-link"
-            >
-              home for builders
-            </LinkPreview>
-            .
-            i don't know where the journey takes me, i don't know if we are gonna make it. i just love what i do, and i will do it forever, i just love it, it's my life, and i love building startups and products.
-          </p>
-        </motion.div> */}
-
       </div>
     </motion.section>
   );

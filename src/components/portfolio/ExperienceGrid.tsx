@@ -118,9 +118,6 @@ export default function JourneyGrid() {
       {/* <div className="flex flex-col gap-3"> */}
       <div className="flex flex-col">
         {projects.map((item, idx) => {
-          const isEven = idx % 2 === 0;
-          const isLast = idx === projects.length - 1;
-
           const TextCard = (
             <a
               href={item.url}
