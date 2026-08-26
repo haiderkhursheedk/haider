@@ -52,21 +52,6 @@ html {
   scrollbar-color: rgba(163, 163, 163, 0.35) transparent;
 }
 
-/* Hide default cursor on devices with fine pointer */
-@media (pointer: fine) {
-
-  html,
-  body,
-  a,
-  button,
-  input,
-  textarea,
-  select,
-  [role="button"],
-  label {
-    cursor: none !important;
-  }
-}
 
 /* Minimal Modern Webkit Scrollbar */
 ::-webkit-scrollbar {

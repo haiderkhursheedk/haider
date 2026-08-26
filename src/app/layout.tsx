@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
-import { SmoothCursor } from "@/components/ui/smooth-cursor";
-// import { MickeyHandCursor } from "@/components/ui/MickeyHandCursor";
 import Navbar from "@/components/portfolio/Navbar";
 import Footer from "@/components/portfolio/Footer";
 
@@ -110,8 +108,6 @@ export default function RootLayout({
                 />
             </head>
             <body className={`font-sans bg-black text-neutral-100`}>
-                {/* <SmoothCursor cursor={<MickeyHandCursor />} /> */}
-                <SmoothCursor />
                 <main className="text-neutral-100 bg-black min-h-screen flex flex-col justify-between">
                     <div>
                         <Navbar />
