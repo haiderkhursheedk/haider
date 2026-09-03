@@ -218,48 +218,6 @@ export default function PressKitPage() {
             ))}
           </div>
         </div>
-
-        {/* <div>
-          <p className="text-xs text-neutral-400 mb-4 font-semibold">Company Logos & Brand Art</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {BRAND_LOGOS.map((asset) => (
-              <div
-                key={asset.title}
-                className="bg-neutral-900/60 border border-neutral-800 rounded overflow-hidden flex flex-col"
-              >
-                <div className="p-8 bg-white flex items-center justify-center border-b border-neutral-200 h-32">
-                  <div className="relative w-28 h-28">
-                    <Image
-                      src={asset.url}
-                      alt={asset.title}
-                      fill
-                      className="object-contain"
-                      sizes="112px"
-                    />
-                  </div>
-                </div>
-
-                <div className="p-4 flex flex-col justify-between flex-1 space-y-1 bg-neutral-900/40">
-                  <div>
-                    <h4 className="text-sm font-medium text-neutral-200">{asset.title}</h4>
-                    <p className="text-xs font-mono text-neutral-400 mt-1">{asset.meta}</p>
-                  </div>
-                  <div className="pt-3">
-                    <a
-                      href={asset.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      download
-                      className="inline-flex items-center gap-1 text-xs font-mono text-blue-400 hover:text-blue-300 hover:underline transition-colors"
-                    >
-                      download ↓
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div> */}
       </section>
 
       <section className="pt-6 border-t border-neutral-800/80">
@@ -285,8 +243,6 @@ export default function PressKitPage() {
             >
               haiderkhursheedk@gmail.com
             </a>
-
-
           </p>
           <p className="text-neutral-600">Responds within 24 hours (if im alive).</p>
           <p className="text-neutral-600">Interview requests, Quotes, Speaking opportunities.</p>
@@ -295,5 +251,3 @@ export default function PressKitPage() {
     </main>
   );
 }
-
-
