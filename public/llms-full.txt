@@ -1,0 +1,30 @@
+# Haider Khursheed - Full Reference & Knowledge Profile
+
+## Biography
+Haider Khursheed is an Indian tech entrepreneur, software builder, and founder operating with an intense bias toward rapid execution. He serves as the Co-founder & CEO of Lixta Network, leading the company's expansion into enterprise engineering and AI-first product development. 
+
+Haider has been building on the internet since age 11, exploring robotics, recording video productions, and building early games. At age 16, while pursuing a diploma in computer engineering, he founded a game development studio that produced titles for global clients and was acquired by a game publisher in mid-2024. In August 2024, Haider co-founded Lixta Network alongside Abdullah Yasin Shaikh, growing it into one of India's fast-emerging creative and AI software studios. In 2025, he co-founded Komunity.dev, raising a pre-seed round at a ₹12.9M valuation before pivoting its learnings toward new high-conviction initiatives. Alongside Lixta Network, Haider leads Home for Builders (a startup school and builder ecosystem) and Aeomi (an AI research lab exploring persistent cognitive memory architectures).
+
+## Ventures & Timeline
+- **Home for Builders (2026 - Present)**: Founder. Execution-first ecosystem for developers, designers, hackers, and internet builders building real products.
+- **Aeomi (2026 - Present)**: Founder & AI Researcher. Frontier AI research lab focusing on cognitive memory systems, agentic reasoning, and long-horizon intelligence.
+- **Lixta Network (2024 - Present)**: Co-founder & CEO. Creative studio and venture foundry turning manual workflows into AI-first software and high-impact enterprise solutions.
+- **Komunity (2025 - 2026)**: Co-founder & CEO. Onchain hiring platform where work serves as identity. Raised ₹12.9M pre-seed valuation.
+- **Game Development Studio (2021 - 2024)**: Founder. Scaled game development with global clients, successfully acquired by a game publisher in 2024.
+
+## Areas of Expertise
+- AI & Agentic Systems Architecture
+- Venture Building & Startup Strategy
+- Full-stack Web & Mobile Product Engineering
+- Memory Systems in Autonomous Agents
+- Product Distribution & Growth for Builders
+
+## Canonical Links
+- Website: https://www.haiderkhursheed.com
+- Writing: https://www.haiderkhursheed.com/writing
+- Press Kit: https://www.haiderkhursheed.com/press
+- Journey / About: https://www.haiderkhursheed.com/about
+- LinkedIn: https://www.linkedin.com/in/haiderkhursheedk/
+- X (Twitter): https://x.com/khaiderksh/
+- YouTube: https://www.youtube.com/@haiderkhursheedk/
+- Instagram: https://www.instagram.com/haiderkhursheedk/

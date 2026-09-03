@@ -1,7 +1,27 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { getAllWritingArticles } from "@/lib/writing";
+
+export const metadata: Metadata = {
+  title: "Writing & Essays",
+  description: "Essays and thoughts by Haider Khursheed on artificial intelligence, memory systems, venture building, and lessons from shipping real products.",
+  alternates: {
+    canonical: "https://www.haiderkhursheed.com/writing",
+  },
+  openGraph: {
+    title: "Writing & Essays • Haider Khursheed",
+    description: "Essays and thoughts by Haider Khursheed on artificial intelligence, memory systems, venture building, and lessons from shipping real products.",
+    url: "https://www.haiderkhursheed.com/writing",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Writing & Essays • Haider Khursheed",
+    description: "Essays and thoughts by Haider Khursheed on artificial intelligence, memory systems, venture building, and lessons from shipping real products.",
+  },
+};
 
 export default function WritingIndexPage() {
   const articles = getAllWritingArticles();

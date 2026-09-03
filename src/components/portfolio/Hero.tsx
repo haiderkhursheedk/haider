@@ -51,6 +51,8 @@ export default function Hero() {
         <Image
           width={800}
           height={160}
+          priority
+          sizes="(max-width: 768px) 100vw, 800px"
           className="w-full h-60 object-cover"
           src="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/theart.jfif"
           alt="the art of dreaming delusional"

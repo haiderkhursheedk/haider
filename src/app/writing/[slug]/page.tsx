@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, Clock, Tag, ArrowUpRight } from "lucide-react";
@@ -12,6 +13,47 @@ import { MediaViewer } from "@/components/blog/media-viewer";
 interface WritingPostPageProps {
   params: {
     slug: string;
+  };
+}
+
+export async function generateMetadata({ params }: WritingPostPageProps): Promise<Metadata> {
+  const article = getWritingArticleBySlug(params.slug);
+  if (!article) {
+    return {
+      title: "Article Not Found",
+    };
+  }
+
+  const url = `https://www.haiderkhursheed.com/writing/${article.slug}`;
+  const ogImage = article.image || "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/haiderisyours.png";
+
+  return {
+    title: article.title,
+    description: article.description,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: `${article.title} • Haider Khursheed`,
+      description: article.description,
+      url,
+      type: "article",
+      publishedTime: article.sr || article.date,
+      authors: ["https://www.haiderkhursheed.com"],
+      images: [
+        {
+          url: ogImage,
+          alt: article.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${article.title} • Haider Khursheed`,
+      description: article.description,
+      images: [ogImage],
+      creator: "@khaiderksh",
+    },
   };
 }
 
@@ -127,12 +169,39 @@ export default function WritingPostPage({ params }: WritingPostPageProps) {
     );
   }
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": article.title,
+    "description": article.description,
+    "image": article.image || "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/haiderisyours.png",
+    "datePublished": article.sr || article.date,
+    "author": {
+      "@type": "Person",
+      "name": "Haider Khursheed",
+      "url": "https://www.haiderkhursheed.com"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Haider Khursheed",
+      "url": "https://www.haiderkhursheed.com"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://www.haiderkhursheed.com/writing/${article.slug}`
+    }
+  };
+
   const otherArticles = getAllWritingArticles()
     .filter((a) => a.slug !== article.slug)
     .slice(0, 2);
 
   return (
     <main className="min-h-screen w-full max-w-4xl mx-auto px-4 sm:px-8 py-4 sm:py-6 text-neutral-800 dark:text-neutral-200 transition-colors duration-300 font-sans">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <article>
         <Link
           href="/writing"
@@ -160,7 +229,8 @@ export default function WritingPostPage({ params }: WritingPostPageProps) {
                 src={article.image}
                 alt={article.title}
                 fill
-                className="object-fit"
+                sizes="(max-width: 768px) 80px, 144px"
+                className="object-cover"
               />
             </div>
           )}
