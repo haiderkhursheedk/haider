@@ -117,14 +117,14 @@ export default function Hero() {
           >
             game dev studio
           </LinkPreview>{" "}
-          building games for clients around the world, and scaling it fast. Then things went bad. Really bad. By mid-2024, the studio got acquired by a game publisher. The full circle moment, I built my first game back in 2016 inside a mobile app that let you build games within a game. Not exactly Unreal Engine, but it was insanely cool for an 11-year-old        </motion.p>
+          building games for clients around the world, and scaling it fast. Then things went bad. Really bad. By mid-2023, the studio got acquired. The full circle moment, I built my first game back in 2016 inside a mobile app that let you build games within a game. Not exactly Unreal Engine, but it was insanely cool for an 11-year-old        </motion.p>
 
         <motion.div
           variants={itemVariants}
           className="relative flex flex-col sm:flex-row items-center gap-4 sm:gap-6 overflow-hidden"
         >
           <p>
-            In August 2024, I met{" "}
+            In July 24, I met{" "}
             <LinkPreview
               url="https://www.linkedin.com/in/abdullahys24/"
               imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/thefirstconversation.jpg"
@@ -193,7 +193,7 @@ export default function Hero() {
               Lixta Network
             </LinkPreview>{" "}
             at enterprise level, becoming more of a engineering and product led company.
-            On the side, I am also building Home for Builders (Startup school), Aeomi (AI Research lab).
+            On the side, I am also building Home for Builders (Startup school & Community).
             I don&apos;t know where this ends. I don&apos;t know if we&apos;ll make it. I just know I love building things, and I&apos;ll do it forever. I hate jobs. I love startups. That&apos;s the whole story.
           </p>
         </motion.div>

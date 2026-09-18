@@ -8,9 +8,8 @@
 - **Primary Ventures**: 
   - **Lixta Network** (Co-founder & CEO): Creative studio & venture foundry turning manual workflows into AI-first software and enterprise solutions. (URL: https://lixtanetwork.com)
   - **Home for Builders** (Founder): Execution-first ecosystem & startup school for developers, designers, and internet builders. (URL: https://homeforbuilders.com)
-  - **Aeomi** (Founder): Frontier AI research lab focusing on persistent cognitive memory systems. (URL: https://aeomi.me)
   - **Komunity** (Co-founder): Onchain hiring platform based on proof of work (Pre-seed funded at ₹12.9M valuation; acquired valuable PMF lessons). (URL: https://komunity.dev)
-  - **Game Development Studio** (Founder): Founded at age 16, scaled globally, acquired by a game publisher in mid-2024.
+  - **Game Development Studio** (Founder): Founded at age 16, scaled globally, acquired and exited in 2023.
 - **Website**: https://www.haiderkhursheed.com
 - **Contact**: haider@lixtanetwork.com / haiderkhursheedk@gmail.com
 

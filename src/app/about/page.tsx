@@ -83,7 +83,7 @@ const LORE_TIMELINE: LoreBlock[] = [
     age: "@18",
     points: [
       { text: "Scaled the studio with global clients." },
-      { text: "Studio got acquired by a game publisher in mid-2024. It didn't scale much, but it was the best decision I made." },
+      { text: "Studio got acquired in mid-2023. It didn't scale much, but it was the best decision I made." },
       { text: "Learned some ethical hacking on the side." },
     ],
     images: [
@@ -143,7 +143,7 @@ const LORE_TIMELINE: LoreBlock[] = [
     age: "@21",
     points: [
       { text: "Scaling Lixta Network to an enterprise-level engineering and product company." },
-      { text: "Building Home for Builders (startup school) & Aeomi (AI research lab).", link: "https://homeforbuilders.com", linkText: "Home for Builders" },
+      { text: "Building Home for Builders (startup school).", link: "https://homeforbuilders.com", linkText: "Home for Builders" },
       { text: "6,687 commits this year, while running companies. Hate jobs, love startups." },
     ],
     images: [

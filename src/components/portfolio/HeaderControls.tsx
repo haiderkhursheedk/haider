@@ -4,11 +4,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { Volume2, VolumeX } from "lucide-react";
 import { motion } from "framer-motion";
 
-// interface HeaderControlsProps {
-//   onOpenCmd?: () => void;
-//   onOpenTerm?: () => void;
-// }
-
 const AUDIO_SRC = "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/canyouhearthemusic.mp3";
 
 export default function HeaderControls() {
@@ -92,6 +87,3 @@ export default function HeaderControls() {
     </motion.header>
   );
 }
-
-
-

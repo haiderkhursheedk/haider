@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         "Haider Khursheed",
         "Lixta Network",
         "Home for Builders",
-        "Aeomi",
+        // "",
         "Komunity",
         "Entrepreneur",
         "Startup Founder",
@@ -123,11 +123,6 @@ export default function RootLayout({
                         "name": "Komunity",
                         "url": "https://komunity.dev"
                     },
-                    {
-                        "@type": "Organization",
-                        "name": "Aeomi",
-                        "url": "https://aeomi.me"
-                    }
                 ],
                 "description": "Founder and entrepreneur building consumer technology, AI-first software, and startups at the intersection of media and technology. Co-founder of Lixta Network.",
                 "url": "https://www.haiderkhursheed.com",

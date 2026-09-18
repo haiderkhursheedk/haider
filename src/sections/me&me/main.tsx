@@ -31,17 +31,11 @@ export default function Landing({ writingArticles }: LandingProps) {
 
         <ExperienceGrid />
 
-        {/* <ExperienceTable /> */}
-
-        {/* <ShippingTable /> */}
-
         <OnStage />
 
         <WritingTable articles={writingArticles} />
 
         <FindMe />
-
-        {/* <PhotoShelf /> */}
 
       </motion.main>
     </PreviewProvider>
