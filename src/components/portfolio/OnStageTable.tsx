@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export interface StageItem {
   title: string;
-  url: string;
+  url?: string;
   image: string;
   imageAlt?: string;
   done: string;
@@ -33,6 +33,12 @@ const stage: StageItem[] = [
     imageAlt: "ITM Summer Hacks 2026",
     image: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/summerhacks2026.jpg",
     done: "Mentor"
+  },
+  {
+    title: "Expert Talk Session (Build · Ship · Repeat) at SIES",
+    imageAlt: "ITM Summer Hacks 2026",
+    image: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/IMG_7220%20(2).jpg",
+    done: "Expert Talk"
   },
 ];
 
@@ -90,7 +96,7 @@ export default function OnStage() {
             href={item.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex flex-col w-full backdrop-blur-sm"
+            className="group flex flex-col w-full backdrop-blur-sm mb-4"
           >
             <div className="relative w-full h-60 overflow-hidden border border-neutral-800/60 bg-neutral-950">
               <Image

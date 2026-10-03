@@ -10,6 +10,7 @@ import OnStage from "@/components/portfolio/OnStageTable";
 import WritingTable from "@/components/portfolio/WritingTable";
 import type { WritingArticle } from "@/lib/writing";
 import FindMe from "@/components/portfolio/FindMeTable";
+import ExperienceTable from "@/components/portfolio/ExperienceTable";
 
 interface LandingProps {
   writingArticles: WritingArticle[];
@@ -30,6 +31,8 @@ export default function Landing({ writingArticles }: LandingProps) {
         <Hero />
 
         <ExperienceGrid />
+
+        <ExperienceTable />
 
         <OnStage />
 
