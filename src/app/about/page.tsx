@@ -21,7 +21,7 @@ const LORE_TIMELINE: LoreBlock[] = [
     age: "@11",
     points: [
       { text: "Started exploring robotics. No tutorials, just raw curiosity." },
-      { text: "Sold pens, wrote books, rented my cycle to others. Always had an entrepreneurial streak." },
+      { text: "Sold pens, wrote books and rented my cycle. Always had an entrepreneurial streak." },
       { text: "Recorded my first video. Horrible quality, but I was obsessed." },
     ],
     images: [
@@ -40,9 +40,8 @@ const LORE_TIMELINE: LoreBlock[] = [
   {
     age: "@12",
     points: [
-      { text: "Played games, recorded them, and posted on my YouTube channel." },
+      { text: "Played games, recorded them and posted on my YouTube channel." },
       { text: "Built my first game inside a mobile app that let you create games within a game." },
-      { text: "Always curious about how machines and software work." },
       { text: "Built small robots and machines as a hobby." },
       { text: "Documented everything on my second YouTube channel. Still have it, but it's a bit embarrassing to share now." },
     ],
@@ -64,7 +63,7 @@ const LORE_TIMELINE: LoreBlock[] = [
     points: [
       { text: "Enrolled in a diploma program for Computer Engineering." },
       { text: "Started learning coding and design seriously." },
-      { text: "Founded my first game development studio." },
+      { text: "Co-founded a small game development studio during my diploma. Exited and closed in 2023." },
     ],
     images: [
       {
@@ -82,9 +81,8 @@ const LORE_TIMELINE: LoreBlock[] = [
   {
     age: "@18",
     points: [
-      { text: "Scaled the studio with global clients." },
-      { text: "Studio got acquired in mid-2023. It didn't scale much, but it was the best decision I made." },
-      { text: "Learned some ethical hacking on the side." },
+      { text: "Shipped hyper-casual games with the studio, then exited and closed it in 2023.." },
+      { text: "Learned some android development and ethical hacking on the side." },
     ],
     images: [
       {
@@ -102,8 +100,8 @@ const LORE_TIMELINE: LoreBlock[] = [
   {
     age: "@19",
     points: [
-      { text: "Met Abdullah on LinkedIn. Co-founded ", link: "https://lixtanetwork.com", linkText: "Lixta Network" },
-      { text: "Turned manual workflows into AI-first software. Built a fast-growing creative studio." },
+      { text: "Met Abdullah Yasin Shaikh on LinkedIn and founded ", link: "https://lixtanetwork.com", linkText: "Lixta Network" },
+      { text: "A creative studio that builds brands, websites and apps." },
       { text: "Started attending tech events and networking." },
     ],
     images: [
@@ -123,8 +121,8 @@ const LORE_TIMELINE: LoreBlock[] = [
     age: "@20",
     points: [
       { text: "Co-founded Komunity, an onchain hiring platform for builders.", link: "https://komunity.dev", linkText: "Komunity.dev" },
-      { text: "Raised a pre-seed round at ₹12.9M valuation. Scaled to 1,000+ users." },
-      { text: "Classic mistake: scaled before product-market fit. Shut it down. Learned more from failure than any win." },
+      { text: "It received early backing from an angel investor and reached 1,000+ users before shutting down in April 2026." },
+      { text: "Classic mistake: scaled before product-market fit. Shut it down in April 2026. Learned more from the failure than from any win." },
     ],
     images: [
       {
@@ -142,9 +140,9 @@ const LORE_TIMELINE: LoreBlock[] = [
   {
     age: "@21",
     points: [
-      { text: "Scaling Lixta Network to an enterprise-level engineering and product company." },
-      { text: "Building Home for Builders (startup school).", link: "https://homeforbuilders.com", linkText: "Home for Builders" },
-      { text: "6,687 commits this year, while running companies. Hate jobs, love startups." },
+      { text: "Scaling Lixta Network, toward enterprise engineering and product work." },
+      { text: "Building Home for Builders, a community.", link: "https://homeforbuilders.com", linkText: "Home for Builders" },
+      { text: "I love startups." }
     ],
     images: [
       {
@@ -157,6 +155,7 @@ const LORE_TIMELINE: LoreBlock[] = [
         caption: "The Home for Builders effect",
         rotate: "2deg",
       },
+
     ],
   },
 ];
@@ -178,6 +177,77 @@ export default function AboutPage() {
         <p className="mt-2 text-sm text-neutral-500 max-w-md">
           The timeline of a curious child who turns ideas into fast shipping companies.
         </p>
+        <div className="mt-6 max-w-2xl overflow-hidden py-5 shadow-lg shadow-black/10 sm:py-6">
+          <p className="mb-4 text-xs text-neutral-500">
+            (Yes, I'm the guy with two names, so a little note about my name)
+          </p>
+          <div className="flex flex-wrap items-start gap-x-5 gap-y-4">
+            <div className="flex flex-wrap items-start gap-x-4 gap-y-3">
+              <span className="inline-flex flex-col items-end gap-0">
+                <span className="text-[11px] font-medium tracking-wide text-sky-300">Used professionally</span>
+                <svg aria-hidden="true" viewBox="0 0 100 22" preserveAspectRatio="none" className="h-4 w-full overflow-visible text-sky-300">
+                  <defs><marker id="arrow-professional" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M 1 1 L 5 3 L 1 5" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" /></marker></defs>
+                  <path d="M 88 1 C 82 11, 58 7, 72 18" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" markerEnd="url(#arrow-professional)" />
+                </svg>
+                <span className="relative px-1 text-2xl font-semibold tracking-tight text-neutral-50 sm:text-3xl">
+                  Haider
+                  <span className="absolute -inset-x-1 -inset-y-0.5 -rotate-2 rounded-[45%] border border-sky-400/80" />
+                </span>
+              </span>
+              <span className="inline-flex flex-col items-start gap-0">
+                <span className="text-[11px] font-medium tracking-wide text-amber-300">Father&apos;s name</span>
+                <svg aria-hidden="true" viewBox="0 0 100 22" preserveAspectRatio="none" className="h-4 w-full overflow-visible text-amber-300">
+                  <defs><marker id="arrow-father" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M 1 1 L 5 3 L 1 5" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" /></marker></defs>
+                  <path d="M 8 1 C 12 12, 39 5, 50 18" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" markerEnd="url(#arrow-father)" />
+                </svg>
+                <span className="relative px-1 text-2xl font-semibold tracking-tight text-neutral-50 sm:text-3xl">
+                  Khursheed
+                  <span className="absolute -inset-x-1 -inset-y-0.5 rotate-1 rounded-[45%] border-2 border-amber-400/80" />
+                </span>
+              </span>
+            </div>
+          </div>
+          <p className="mt-2 text-sm text-neutral-400">Haider Khursheed is the name I use professionally.</p>
+
+          <div className="my-5 h-px bg-neutral-800/80" />
+
+          <p className="mb-3 text-xs text-neutral-500">My legal name</p>
+          <div className="flex flex-wrap items-start gap-x-5 gap-y-4 mx-3">
+            <span className="inline-flex flex-col items-center gap-0">
+              <span className="text-[11px] font-medium tracking-wide text-rose-300">Maa-baap ka diya hua naam</span>
+              <svg aria-hidden="true" viewBox="0 0 100 22" preserveAspectRatio="none" className="h-4 w-full overflow-visible text-rose-300">
+                <defs><marker id="arrow-given-name" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M 1 1 L 5 3 L 1 5" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" /></marker></defs>
+                <path d="M 88 1 C 80 12, 52 5, 38 18" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" markerEnd="url(#arrow-given-name)" />
+              </svg>
+              <span className="relative px-1 text-2xl font-semibold tracking-tight text-neutral-50 sm:text-3xl">
+                Abdul Rehman
+                <span className="absolute -inset-x-1 -inset-y-0.5 rotate-1 rounded-[45%] border border-rose-400/80" />
+              </span>
+            </span>
+            <span className="inline-flex flex-col items-end gap-0">
+              <span className="text-[11px] font-medium tracking-wide text-amber-300">Father&apos;s name</span>
+              <svg aria-hidden="true" viewBox="0 0 100 22" preserveAspectRatio="none" className="h-4 w-full overflow-visible text-amber-300">
+                <defs><marker id="arrow-legal-father" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M 1 1 L 5 3 L 1 5" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" /></marker></defs>
+                <path d="M 90 1 C 84 12, 62 5, 74 18" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" markerEnd="url(#arrow-legal-father)" />
+              </svg>
+              <span className="relative px-1 text-2xl font-semibold tracking-tight text-neutral-50 sm:text-3xl">
+                Khursheed
+                <span className="absolute -inset-x-1 -inset-y-0.5 rotate-1 rounded-[45%] border-2 border-amber-400/80" />
+              </span>
+            </span>
+            <span className="inline-flex flex-col items-center gap-0">
+              <span className="text-[11px] font-medium tracking-wide text-violet-300">Surname</span>
+              <svg aria-hidden="true" viewBox="0 0 100 22" preserveAspectRatio="none" className="h-4 w-full overflow-visible text-violet-300">
+                <defs><marker id="arrow-surname" markerWidth="7" markerHeight="7" refX="5.5" refY="3" orient="auto" markerUnits="userSpaceOnUse"><path d="M 1 1 L 5 3 L 1 5" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" /></marker></defs>
+                <path d="M 92 1 C 86 10, 72 7, 68 18" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" markerEnd="url(#arrow-surname)" />
+              </svg>
+              <span className="relative px-1 text-2xl font-semibold tracking-tight text-neutral-50 sm:text-3xl">
+                Khan
+                <span className="absolute -inset-x-1 -inset-y-0.5 -rotate-2 rounded-[45%] border border-violet-400/80" />
+              </span>
+            </span>
+          </div>
+        </div>
       </motion.div>
 
       <div className="space-y-10">

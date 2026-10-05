@@ -5,23 +5,37 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Copy, Check } from "lucide-react";
 
-const BIOS = [
+const BIOS: { title: string; paragraphs: string[] }[] = [
   {
     title: "Short Bio",
-    words: "50 words",
-    text: "Haider Khursheed is the Co-founder & CEO of Lixta Network, a creative studio building brands, web applications, and AI-first software. 21 years old. Founded a game dev studio at 16 (exited 2023), co-founded Komunity.dev, and now scaling enterprise software solutions alongside Home for Builders.",
+    paragraphs: [
+      "Haider Khursheed is the Founder & Chairman of Lixta Network, a studio that builds brands, websites and apps and turns manual work into AI-first software. He founded it with Abdullah Yasin Shaikh. He co-founded a small game development studio during his diploma, exited and closed in 2023, co-founded Komunity, and runs Home for Builders, a community for people who build.",
+    ],
   },
   {
     title: "Medium Bio",
-    words: "150 words",
-    text: "Haider Khursheed is a builder and founder who turns ideas into fast-shipping companies. At 21, he serves as the Founder of Lixta Network, leading the company's shift toward enterprise engineering and AI-first product development. Obsessed with how things work since age 11, Haider started recording videos and building games early, founding a game development studio in 2021 that scaled globally and was acquired in 2023. In 2024, he co-founded Lixta Network, turning manual workflows into modern digital experiences. He later co-founded Komunity.dev, raising a pre-seed round at a ₹12.9M valuation before pivoting its lessons into new ventures. Today, alongside scaling Lixta Network, he actively builds Home for Builders—a dedicated startup school for builders.",
+    paragraphs: [
+      "Haider Khursheed is a builder and founder based in India. He has been building since age 11, starting with robotics, videos and games.",
+      "In 2021, during his computer engineering diploma, he co-founded a small game development studio. He exited and closed it in 2023. In July 2024 he founded Lixta Network with Abdullah Yasin Shaikh, a studio that builds brands, websites and apps and turns manual work into AI-first software. He is its Founder & Chairman.",
+      "In 2025 he co-founded Komunity, an onchain hiring platform where work serves as identity. It received early backing from an angel investor and reached 1,000+ users before shutting down in April 2026.",
+      "Today he is focused on Lixta Network's move into enterprise engineering and product work, and he runs Home for Builders, a community for people who build real things. He writes about shipping, distribution and building in public at haiderkhursheed.com.",
+    ],
   },
   {
     title: "Long Bio",
-    words: "300 words",
-    text: "Haider Khursheed is the Co-founder & CEO of Lixta Network, building next-generation digital products, brand experiences, and enterprise AI-first software. Operating with an intense bias toward execution, Haider has been building on the internet for over a decade. His journey began at age 11, taking apart machines, building robotics, and creating his first mobile game in 2016. In 2021, while pursuing a diploma in computer engineering, he launched a game development studio that produced games for global clients, culminating in a successful acquisition in mid-2023. In July 2024, Haider co-founded Lixta Network alongside Abdullah. Under their leadership, Lixta has emerged as one of the fastest-growing creative and software studios out of India, servicing ambitious startups and transitioning into high-impact enterprise solutions. In 2025, to solve hiring friction for builders, he co-founded Komunity.dev—an onchain platform where work serves as identity—raising a pre-seed round at a ₹12.9M pre-money valuation and scaling to 1,000+ users before winding down operations in 2026 to focus on high-conviction ventures. Currently, Haider leads product and engineering at Lixta Network while driving side initiatives including Home for Builders, an execution-first startup school for internet builders. Driven by an uncompromising love for building startups, Haider continues to ship software at scale.",
+    paragraphs: [
+      "Haider Khursheed is a builder and founder based in India, with a strong bias toward shipping. He has been building on the internet for about ten years. It began at age 11 with taking apart machines, building small robots and recording videos, and continued with his first mobile game.",
+      "In 2021, while pursuing a diploma in computer engineering, he co-founded a small game development studio. He exited and closed it in 2023. In 2022 he also interned at Ihaan Technologies, working on Android apps alongside experienced developers.",
+      "In July 2024 he founded Lixta Network with Abdullah Yasin Shaikh. It is a studio that builds brands, websites and apps and turns manual work into AI-first software. Haider is its Founder & Chairman.",
+      "In 2025, he co-founded Komunity, an onchain platform where a person's work serves as their identity. It received early backing from an angel investor and reached 1,000+ users before shutting down in April 2026.",
+      "He also runs Home for Builders, a community for developers, designers, founders and creators who want to build real things, whether in AI, apps, games, hardware or media.",
+      "His approach is simple: build in public, ship early, and measure what people actually use. He writes about shipping, distribution and building in public at haiderkhursheed.com, and he cares about real work over noise.",
+    ],
   },
 ];
+
+const countWords = (paragraphs: string[]) =>
+  paragraphs.join(" ").trim().split(/\s+/).length;
 
 interface Asset {
   title: string;
@@ -44,7 +58,7 @@ const PHOTOS: Asset[] = [
   {
     title: "Haider Khursheed — Photo 3",
     meta: "PNG · 512×512",
-    url: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/haiderkhursheed3.png",
+    url: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/experttalk@sies.jpg",
   },
 ];
 
@@ -157,13 +171,17 @@ export default function PressKitPage() {
               <div className="flex items-center justify-between mb-2">
                 <span className="text-xs text-neutral-400">
                   {bio.title}{" "}
-                  <span className="text-neutral-600">({bio.words})</span>
+                  <span className="text-neutral-600">
+                    ({countWords(bio.paragraphs)} words)
+                  </span>
                 </span>
-                <CopyButton text={bio.text} />
+                <CopyButton text={bio.paragraphs.join("\n\n")} />
               </div>
-              <p className="text-sm text-neutral-400 leading-relaxed font-sans group-hover:text-neutral-300 transition-colors">
-                {bio.text}
-              </p>
+              <div className="space-y-3 text-sm text-neutral-400 leading-relaxed font-sans group-hover:text-neutral-300 transition-colors">
+                {bio.paragraphs.map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
+              </div>
             </div>
           ))}
         </div>
@@ -218,6 +236,51 @@ export default function PressKitPage() {
             ))}
           </div>
         </div>
+        {/* 
+        <div className="mb-10">
+          <p className="text-xs text-neutral-400 mb-4 font-semibold">Company Logos</p>
+          <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-6">
+            {PHOTOS.map((asset) => (
+              <div
+                key={asset.title}
+                className="bg-neutral-900/60 border border-neutral-800 overflow-hidden flex flex-col"
+              >
+                <div className="p-8 flex items-center justify-center h-32">
+                  <div className="relative w-24 h-24">
+                    <Image
+                      src={asset.url}
+                      alt={asset.title}
+                      fill
+                      className="object-contain"
+                      sizes="112px"
+                    />
+                  </div>
+                </div>
+
+                <div className="p-4 flex flex-col justify-between flex-1 space-y-1 bg-neutral-900/40">
+                  <div>
+                    <h4 className="text-sm font-medium text-neutral-200">{asset.title}</h4>
+                    <p className="text-xs text-neutral-400 mt-1">{asset.meta}</p>
+                  </div>
+                  <div className="pt-2">
+                    <button
+                      type="button"
+                      onClick={() =>
+                        handleDownload(
+                          asset.url,
+                          `${asset.title.toLowerCase().replace(/[^a-z0-9]/g, "-")}.png`
+                        )
+                      }
+                      className="inline-flex items-center gap-1 text-xs text-blue-400 hover:text-blue-300 hover:underline transition-colors cursor-pointer"
+                    >
+                      Download ↓
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div> */}
       </section>
 
       <section className="pt-6 border-t border-neutral-800/80">
@@ -235,7 +298,7 @@ export default function PressKitPage() {
             </a>
           </p>
 
-          <p>
+          {/* <p>
             • email:{" "}
             <a
               href="mailto:haiderkhursheedk@gmail.com"
@@ -243,8 +306,9 @@ export default function PressKitPage() {
             >
               haiderkhursheedk@gmail.com
             </a>
-          </p>
-          <p className="text-neutral-600">Responds within 24 hours (if im alive).</p>
+          </p> */}
+          {/* <p className="text-neutral-600">Responds within 24 hours (if im alive).</p> */}
+          <p className="text-neutral-600">Responds within 24 hours.</p>
           <p className="text-neutral-600">Interview requests, Quotes, Speaking opportunities.</p>
         </div>
       </section>

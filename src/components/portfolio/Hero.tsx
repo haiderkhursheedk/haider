@@ -39,8 +39,11 @@ export default function Hero() {
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-neutral-900 dark:text-neutral-100 font-sans">
           Haider Khursheed
         </h1>
-        <p className="mt-2 text-base sm:text-lg text-neutral-500 dark:text-neutral-400">
+        {/* <p className="mt-2 text-base sm:text-lg text-neutral-500 dark:text-neutral-400">
           the curious child
+        </p> */}
+        <p className="mt-2 text-base sm:text-lg text-neutral-500 dark:text-neutral-400">
+          entrepreneur, tinkerer, curious child
         </p>
       </motion.div>
 
@@ -82,7 +85,7 @@ export default function Hero() {
           <video
             width={800}
             height={160}
-            className="w-32 h-32 object-cover shrink-0 lg:block md:block sm:hidden"
+            className="w-24 h-24 object-cover shrink-0 lg:block md:block sm:hidden"
             autoPlay
             loop
             muted
@@ -90,6 +93,7 @@ export default function Hero() {
             src="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/thebeginning.mp4"
           />
           <p className="relative sm:ml-0 lg:ml-2 md:ml-2 right-0 text-base sm:text-lg text-neutral-300 drop-shadow-sm">
+
             I&apos;ve been obsessed with how things work since I was a {" "}
             <LinkPreview
               imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/robotsatiit.png"
@@ -99,32 +103,37 @@ export default function Hero() {
               kid
             </LinkPreview>
             . At 11, I recorded my first video, it was horrible, but I&apos;m still proud of it.
-            I was the kid who kept asking &quot;why&quot; and &quot;how&quot;. While others memorized answers,
+            I was the one who kept asking "why" and "how". While others memorized answers,
             I was taking apart machines and building robots.
             I wasn&apos;t the cool kid.
-            I was average on paper.
-            But I was always curious.
+            I was average on paper,
+            but always curious.
           </p>
         </motion.div>
 
         <motion.p variants={itemVariants}>
+
+          In 2017, I built my first game inside a mobile app that let you make games within a game. It wasn't Unreal Engine, but it was insanely cool for an 12-year-old.
+
+
           In 2021, I enrolled in a diploma program for computer engineering and fell into game development. I ended up founding a
           {" "}
           <LinkPreview
             imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/gamedevartpiece.png"
-            caption="Game development studio. scaled games for global clients, acquired by publisher in 2024."
+            caption="Game development studio"
             className="font-bold text-neutral-100 basic-link"
           >
             game dev studio
           </LinkPreview>{" "}
-          building games for clients around the world, and scaling it fast. Then things went bad. Really bad. By mid-2023, the studio got acquired. The full circle moment, I built my first game back in 2016 inside a mobile app that let you build games within a game. Not exactly Unreal Engine, but it was insanely cool for an 11-year-old        </motion.p>
+          building games for clients around the world. Then things went bad. Really bad. By mid-2023, the studio got privately acquired.
+        </motion.p>
 
         <motion.div
           variants={itemVariants}
           className="relative flex flex-col sm:flex-row items-center gap-4 sm:gap-6 overflow-hidden"
         >
           <p>
-            In July 24, I met{" "}
+            In July 2024, I met{" "}
             <LinkPreview
               url="https://www.linkedin.com/in/abdullahys24/"
               imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/thefirstconversation.jpg"
@@ -142,12 +151,12 @@ export default function Hero() {
             >
               Lixta Network
             </LinkPreview>{" "}
-            , a creative studio that builds brands, websites, and apps for tomorrow&apos;s companies, turning manual work into AI-first software. Two years in, we&apos;re one of the fastest growing creative studios out of India and now we&apos;re pushing into enterprise solutions.{" "}
+            , a creative studio that builds brands, websites, and apps for tomorrow&apos;s companies, turning manual work into AI-first software.
           </p>
           <video
             width={800}
             height={160}
-            className="w-32 h-32 object-cover shrink-0 lg:block md:block sm:hidden sm:ml-0 lg:ml-2 md:ml-2"
+            className="w-24 h-24 object-cover shrink-0 lg:block md:block sm:hidden sm:ml-0 lg:ml-2 md:ml-2"
             autoPlay
             loop
             muted
@@ -157,7 +166,7 @@ export default function Hero() {
         </motion.div>
 
         <motion.p variants={itemVariants}>
-          In 2025, I ran into a hiring problem. Everyone was polishing resumes instead of showing what they built. So I cofounded {" "}
+          In 2025, I ran into a hiring problem: everyone was polishing resumes instead of showing what they built. So I cofounded {" "}
           <LinkPreview
             url="https://www.komunity.dev/"
             imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/@20journey1.jpg"
@@ -166,8 +175,7 @@ export default function Hero() {
           >
             Komunity
           </LinkPreview>{" "}
-          , an onchain hiring platform where your work becomes your identity. We raised a pre-seed round at a ₹12.9M pre-money valuation, hit 1,000 users, and made some revenue. But by April 2026, I realized we&apos;d failed on distribution and product-market fit. We spent a year building, got traction, then made the classic mistake of scaling before nailing early adopters. We shut it down. I learned more from that failure than from any win.        </motion.p>
-
+          , an onchain hiring platform where your work becomes your identity. We raised a pre-seed round, reached 1,000 users and made some revenue. By April 2026, I realized we had failed on distribution and product-market fit. We scaled before nailing early adopters, and we shut it down. I learned more from that failure than from any win.</motion.p>
         <motion.div
           variants={itemVariants}
           className="relative flex flex-col sm:flex-row items-center gap-4 sm:gap-6 overflow-hidden"
@@ -175,7 +183,7 @@ export default function Hero() {
           <video
             width={800}
             height={160}
-            className="w-32 h-32 object-cover shrink-0 lg:block md:block sm:hidden"
+            className="w-24 h-24 object-cover shrink-0 lg:block md:block sm:hidden"
             autoPlay
             loop
             muted
@@ -183,7 +191,7 @@ export default function Hero() {
             src="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/supanova.mp4"
           />
           <p>
-            Currently, I&apos;m focused on scaling{" "}
+            Today, I&apos;m Chairman of{" "}
             <LinkPreview
               url="https://www.lixtanetwork.com/"
               imageSrc="https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/@2026-lixtanetwork.jpg"
@@ -192,9 +200,8 @@ export default function Hero() {
             >
               Lixta Network
             </LinkPreview>{" "}
-            at enterprise level, becoming more of a engineering and product led company.
-            On the side, I am also building Home for Builders (Startup school & Community).
-            I don&apos;t know where this ends. I don&apos;t know if we&apos;ll make it. I just know I love building things, and I&apos;ll do it forever. I hate jobs. I love startups. That&apos;s the whole story.
+            , which is moving toward enterprise engineering and product work. On the side, I&apos;m building Home for Builders, a community for people who build.
+            I don&apos;t know where this ends. I just know I love building things, and I&apos;ll keep doing it. That&apos;s the whole story.
           </p>
         </motion.div>
       </div>

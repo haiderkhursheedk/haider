@@ -31,6 +31,8 @@ export default function Landing({ writingArticles }: LandingProps) {
 
         <ExperienceGrid />
 
+        {/* <ExperienceTable /> */}
+
         <OnStage />
 
         <WritingTable articles={writingArticles} />
