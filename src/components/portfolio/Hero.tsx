@@ -103,7 +103,7 @@ export default function Hero() {
               kid
             </LinkPreview>
             . At 11, I recorded my first video, it was horrible, but I&apos;m still proud of it.
-            I was the one who kept asking "why" and "how". While others memorized answers,
+            I was the one who kept asking &quot;why&quot; and &quot;how&quot;. While others memorized answers,
             I was taking apart machines and building robots.
             I wasn&apos;t the cool kid.
             I was average on paper,
@@ -113,7 +113,7 @@ export default function Hero() {
 
         <motion.p variants={itemVariants}>
 
-          In 2017, I built my first game inside a mobile app that let you make games within a game. It wasn't Unreal Engine, but it was insanely cool for an 12-year-old.
+          In 2017, I built my first game inside a mobile app that let you make games within a game. It wasn&apos;t Unreal Engine, but it was insanely cool for an 12-year-old.
 
 
           In 2021, I enrolled in a diploma program for computer engineering and fell into game development. I ended up founding a
