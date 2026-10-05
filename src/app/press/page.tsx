@@ -58,7 +58,7 @@ const PHOTOS: Asset[] = [
   {
     title: "Haider Khursheed — Photo 3",
     meta: "PNG · 512×512",
-    url: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/haiderkhursheed3.png",
+    url: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/experttalk@sies.jpg",
   },
 ];
 
@@ -236,6 +236,51 @@ export default function PressKitPage() {
             ))}
           </div>
         </div>
+        {/* 
+        <div className="mb-10">
+          <p className="text-xs text-neutral-400 mb-4 font-semibold">Company Logos</p>
+          <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-6">
+            {PHOTOS.map((asset) => (
+              <div
+                key={asset.title}
+                className="bg-neutral-900/60 border border-neutral-800 overflow-hidden flex flex-col"
+              >
+                <div className="p-8 flex items-center justify-center h-32">
+                  <div className="relative w-24 h-24">
+                    <Image
+                      src={asset.url}
+                      alt={asset.title}
+                      fill
+                      className="object-contain"
+                      sizes="112px"
+                    />
+                  </div>
+                </div>
+
+                <div className="p-4 flex flex-col justify-between flex-1 space-y-1 bg-neutral-900/40">
+                  <div>
+                    <h4 className="text-sm font-medium text-neutral-200">{asset.title}</h4>
+                    <p className="text-xs text-neutral-400 mt-1">{asset.meta}</p>
+                  </div>
+                  <div className="pt-2">
+                    <button
+                      type="button"
+                      onClick={() =>
+                        handleDownload(
+                          asset.url,
+                          `${asset.title.toLowerCase().replace(/[^a-z0-9]/g, "-")}.png`
+                        )
+                      }
+                      className="inline-flex items-center gap-1 text-xs text-blue-400 hover:text-blue-300 hover:underline transition-colors cursor-pointer"
+                    >
+                      Download ↓
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div> */}
       </section>
 
       <section className="pt-6 border-t border-neutral-800/80">
