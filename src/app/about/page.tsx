@@ -179,7 +179,7 @@ export default function AboutPage() {
         </p>
         <div className="mt-6 max-w-2xl overflow-hidden py-5 shadow-lg shadow-black/10 sm:py-6">
           <p className="mb-4 text-xs text-neutral-500">
-            (Yes, I'm the guy with two names, so a little note about my name)
+            (Yes, I&apos;m the guy with two names, so a little note about my name)
           </p>
           <div className="flex flex-wrap items-start gap-x-5 gap-y-4">
             <div className="flex flex-wrap items-start gap-x-4 gap-y-3">
