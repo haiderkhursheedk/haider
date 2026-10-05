@@ -19,13 +19,13 @@ const findme: FindmeItem[] = [
     done: "Linkedin"
   },
   {
-    url: "https://x.com/khaiderksh",
+    url: "https://x.com/khaiderksh/",
     image: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/haiderkhursheed-twitter.jpg",
     imageAlt: "Haider Khursheed - Twitter",
     done: "Twitter"
   },
   {
-    url: "youtube.com/@haiderkhursheedk/",
+    url: "https://www.youtube.com/@haiderkhursheedk/",
     imageAlt: "Haider Khursheed - Youtube",
     image: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/haiderkhursheed-youtube.jpg",
     done: "Youtube"
@@ -49,7 +49,7 @@ const findme: FindmeItem[] = [
     done: "Substack"
   },
   {
-    url: "https://github.com/haiderkhursheedk",
+    url: "https://github.com/haiderkhursheedk/",
     imageAlt: "Haider Khursheed - Github",
     image: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/haiderkhursheed-github.jpg",
     done: "Github"
