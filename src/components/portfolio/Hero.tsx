@@ -175,7 +175,7 @@ export default function Hero() {
           >
             Komunity
           </LinkPreview>{" "}
-          , an onchain hiring platform where your work becomes your identity. We raised a pre-seed round, reached 1,000 users and made some revenue. By April 2026, I realized we had failed on distribution and product-market fit. We scaled before nailing early adopters, and we shut it down. I learned more from that failure than from any win.</motion.p>
+          , an onchain hiring platform where your work becomes your identity. It received early backing from an angel investor, reached 1,000+ users lifetime and made some revenue. By April 2026, I realized we had failed on distribution and product-market fit. We scaled before nailing early adopters, and we shut it down. I learned more from that failure than from any win.</motion.p>
         <motion.div
           variants={itemVariants}
           className="relative flex flex-col sm:flex-row items-center gap-4 sm:gap-6 overflow-hidden"

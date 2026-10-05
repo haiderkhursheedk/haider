@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         default: "Haider Khursheed • Founder & Chairman of Lixta Network",
         template: "%s • Haider Khursheed",
     },
-    description: "Haider Khursheed is the Founder & Chairman of Lixta Network and builds AI-first software. Home for Builders is a community.",
+    description: "Haider Khursheed is the Founder & Chairman of Lixta Network and builds AI-first software.",
     keywords: [
         "Haider Khursheed",
         "Lixta Network",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         "Entrepreneur",
         "Startup Founder",
         "AI Software",
-        "Consumer Technology",
+        "Creative Studio",
         "Builder",
     ],
     authors: [{ name: "Haider Khursheed", url: "https://www.haiderkhursheed.com" }],
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     },
     openGraph: {
         title: "Haider Khursheed • Founder & Chairman of Lixta Network",
-        description: "Haider Khursheed is the Founder & Chairman of Lixta Network and builds AI-first software. Home for Builders is a community.",
+        description: "Haider Khursheed is the Founder & Chairman of Lixta Network and builds AI-first software.",
         url: "https://www.haiderkhursheed.com/",
         siteName: "Haider Khursheed",
         locale: "en_US",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         title: "Haider Khursheed • Founder & Chairman of Lixta Network",
-        description: "Haider Khursheed is the Founder & Chairman of Lixta Network and builds AI-first software. Home for Builders is a community.",
+        description: "Haider Khursheed is the Founder & Chairman of Lixta Network and builds AI-first software.",
         site: "@khaiderksh",
         creator: "@khaiderksh",
         images: ["https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/haiderisyours.png"],
@@ -124,7 +124,7 @@ export default function RootLayout({
                         "dissolutionDate": "2026-04"
                     }
                 ],
-                "description": "Founder & Chairman of Lixta Network, a studio that builds brands, websites and apps and turns manual work into AI-first software. Founded Lixta Network with Abdullah Yasin Shaikh. Founder of the Home for Builders community.",
+                "description": "Founder & Chairman of Lixta Network, a studio that builds brands, websites and apps and turns manual work into AI-first software. Founded Lixta Network with Abdullah Yasin Shaikh.",
                 "url": "https://www.haiderkhursheed.com",
                 "image": "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/haiderisyours.png",
                 "sameAs": [
@@ -145,7 +145,7 @@ export default function RootLayout({
                 "@id": "https://www.haiderkhursheed.com/#website",
                 "url": "https://www.haiderkhursheed.com",
                 "name": "Haider Khursheed",
-                "description": "Founder and entrepreneur building consumer technology, AI-first software, and startups.",
+                "description": "Founder and entrepreneur building creative studios, AI-first software, and startups.",
                 "publisher": {
                     "@id": "https://www.haiderkhursheed.com/#person"
                 }
@@ -163,7 +163,6 @@ export default function RootLayout({
     };
 
     return (
-        // <html lang="en" className="dark">
         <html lang="en" className="dark">
             <head>
                 <script
@@ -173,7 +172,6 @@ export default function RootLayout({
                     }}
                 />
             </head>
-            {/* <body className={`font-sans bg-black text-neutral-100`}> */}
             <body className={`font-sans bg-black text-neutral-100`}>
                 {gaId && (
                     <>
@@ -193,7 +191,6 @@ export default function RootLayout({
                         </Script>
                     </>
                 )}
-                {/* <main className="text-neutral-100 bg-black min-h-screen flex flex-col justify-between"> */}
                 <main className="text-neutral-100 bg-black min-h-screen flex flex-col justify-between">
                     <div>
                         <Navbar />
