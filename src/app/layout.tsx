@@ -15,20 +15,18 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
     metadataBase: new URL("https://www.haiderkhursheed.com"),
     title: {
-        default: "Haider Khursheed • Entrepreneur & Founder of Lixta Network",
+        default: "Haider Khursheed • Founder & Chairman of Lixta Network",
         template: "%s • Haider Khursheed",
     },
-    description: "Haider Khursheed is a founder and entrepreneur building consumer technology, AI-first software, and startups. Co-founder of Lixta Network and Home for Builders.",
+    description: "Haider Khursheed is the Founder & Chairman of Lixta Network and builds AI-first software. Home for Builders is a community.",
     keywords: [
         "Haider Khursheed",
         "Lixta Network",
         "Home for Builders",
-        // "",
         "Komunity",
         "Entrepreneur",
         "Startup Founder",
         "AI Software",
-        "Venture Foundry",
         "Consumer Technology",
         "Builder",
     ],
@@ -62,8 +60,8 @@ export const metadata: Metadata = {
         ],
     },
     openGraph: {
-        title: "Haider Khursheed • Entrepreneur & Founder of Lixta Network",
-        description: "Haider Khursheed is a founder and entrepreneur building consumer technology, AI-first software, and startups. Co-founder of Lixta Network and Home for Builders.",
+        title: "Haider Khursheed • Founder & Chairman of Lixta Network",
+        description: "Haider Khursheed is the Founder & Chairman of Lixta Network and builds AI-first software. Home for Builders is a community.",
         url: "https://www.haiderkhursheed.com/",
         siteName: "Haider Khursheed",
         locale: "en_US",
@@ -73,14 +71,14 @@ export const metadata: Metadata = {
                 url: "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/haiderisyours.png",
                 width: 1200,
                 height: 630,
-                alt: "Haider Khursheed • Entrepreneur & Founder of Lixta Network",
+                alt: "Haider Khursheed • Founder & Chairman of Lixta Network",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Haider Khursheed • Entrepreneur & Founder of Lixta Network",
-        description: "Haider Khursheed is a founder and entrepreneur building consumer technology, AI-first software, and startups. Co-founder of Lixta Network and Home for Builders.",
+        title: "Haider Khursheed • Founder & Chairman of Lixta Network",
+        description: "Haider Khursheed is the Founder & Chairman of Lixta Network and builds AI-first software. Home for Builders is a community.",
         site: "@khaiderksh",
         creator: "@khaiderksh",
         images: ["https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/haiderisyours.png"],
@@ -101,7 +99,8 @@ export default function RootLayout({
                 "@type": "Person",
                 "@id": "https://www.haiderkhursheed.com/#person",
                 "name": "Haider Khursheed",
-                "jobTitle": "Founder & Entrepreneur",
+                "alternateName": "Abdul Rehman Khursheed Khan",
+                "jobTitle": "Founder & Chairman",
                 "worksFor": {
                     "@type": "Organization",
                     "name": "Lixta Network",
@@ -121,10 +120,11 @@ export default function RootLayout({
                     {
                         "@type": "Organization",
                         "name": "Komunity",
-                        "url": "https://komunity.dev"
-                    },
+                        "url": "https://komunity.dev",
+                        "dissolutionDate": "2026-04"
+                    }
                 ],
-                "description": "Founder and entrepreneur building consumer technology, AI-first software, and startups at the intersection of media and technology. Co-founder of Lixta Network.",
+                "description": "Founder & Chairman of Lixta Network, a studio that builds brands, websites and apps and turns manual work into AI-first software. Founded Lixta Network with Abdullah Yasin Shaikh. Founder of the Home for Builders community.",
                 "url": "https://www.haiderkhursheed.com",
                 "image": "https://erzeardsiwrvbavennox.supabase.co/storage/v1/object/public/images/haiderisyours.png",
                 "sameAs": [
@@ -135,12 +135,9 @@ export default function RootLayout({
                 ],
                 "knowsAbout": [
                     "Entrepreneurship",
-                    "Consumer Technology",
-                    "Artificial Intelligence",
-                    "Agentic AI",
-                    "Media Technology",
-                    "Creative Studios",
-                    "Startups"
+                    "Startups",
+                    "AI-first software",
+                    "Software product development"
                 ]
             },
             {
@@ -157,7 +154,7 @@ export default function RootLayout({
                 "@type": "ProfilePage",
                 "@id": "https://www.haiderkhursheed.com/#profilepage",
                 "url": "https://www.haiderkhursheed.com",
-                "name": "Haider Khursheed • Entrepreneur & Founder of Lixta Network",
+                "name": "Haider Khursheed • Founder & Chairman of Lixta Network",
                 "mainEntity": {
                     "@id": "https://www.haiderkhursheed.com/#person"
                 }
@@ -166,6 +163,7 @@ export default function RootLayout({
     };
 
     return (
+        // <html lang="en" className="dark">
         <html lang="en" className="dark">
             <head>
                 <script
@@ -175,6 +173,7 @@ export default function RootLayout({
                     }}
                 />
             </head>
+            {/* <body className={`font-sans bg-black text-neutral-100`}> */}
             <body className={`font-sans bg-black text-neutral-100`}>
                 {gaId && (
                     <>
@@ -194,6 +193,7 @@ export default function RootLayout({
                         </Script>
                     </>
                 )}
+                {/* <main className="text-neutral-100 bg-black min-h-screen flex flex-col justify-between"> */}
                 <main className="text-neutral-100 bg-black min-h-screen flex flex-col justify-between">
                     <div>
                         <Navbar />

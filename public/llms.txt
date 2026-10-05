@@ -1,15 +1,17 @@
 # Haider Khursheed
 
-> Founder and entrepreneur building consumer companies and AI-first software at the intersection of media and technology. Co-founder of Lixta Network and Home for Builders.
+> Founder and entrepreneur building consumer companies and AI-first software. Founder & Chairman of Lixta Network and founder of Home for Builders.
 
 ## Core Information
 - **Name**: Haider Khursheed
-- **Role**: Founder, CEO & Entrepreneur
-- **Primary Ventures**: 
-  - **Lixta Network** (Co-founder & CEO): Creative studio & venture foundry turning manual workflows into AI-first software and enterprise solutions. (URL: https://lixtanetwork.com)
-  - **Home for Builders** (Founder): Execution-first ecosystem & startup school for developers, designers, and internet builders. (URL: https://homeforbuilders.com)
-  - **Komunity** (Co-founder): Onchain hiring platform based on proof of work (Pre-seed funded at ₹12.9M valuation; acquired valuable PMF lessons). (URL: https://komunity.dev)
-  - **Game Development Studio** (Founder): Founded at age 16, scaled globally, acquired and exited in 2023.
+- **Role**: Founder & Chairman of Lixta Network
+- **Professional name**: Haider Khursheed
+- **Legal name**: Abdul Rehman Khursheed Khan
+- **Primary Ventures**:
+  - **Lixta Network** (Founder & Chairman): A studio that builds brands, websites and apps and turns manual work into AI-first software. Founded with Abdullah Yasin Shaikh. (URL: https://lixtanetwork.com)
+  - **Home for Builders** (Founder): A community for developers, designers, and internet builders. (URL: https://homeforbuilders.com)
+  - **Komunity** (Co-Founder): An onchain hiring platform based on proof of work. It received early backing from an angel investor and reached 1,000+ users before shutting down in April 2026. (URL: https://komunity.dev)
+  - **Game Development Studio**: Co-founded a small game development studio during his diploma. Exited and closed in 2023.
 - **Website**: https://www.haiderkhursheed.com
 - **Contact**: haider@lixtanetwork.com / haiderkhursheedk@gmail.com
 
@@ -22,6 +24,5 @@
 
 ## Featured Essays & Writing
 - [The Art of Dreaming Delusionally Big](https://www.haiderkhursheed.com/writing/the-art-of-dreaming-delusionally-big): On audacity, vision, and building without artificial limits.
-- [Cognitive Memory Systems in AI](https://www.haiderkhursheed.com/writing/cognitive-memory-systems-in-ai): Architecture and implications of persistent memory in autonomous AI agents.
 - [Building in Public and the Art of Shipping](https://www.haiderkhursheed.com/writing/building-in-public-and-the-art-of-shipping): Why rapid execution beats theoretical planning.
-- [What Failing Taught Me About Product Distribution](https://www.haiderkhursheed.com/writing/what-failing-taught-me-about-product-distribution): Hard-learned lessons from scaling Komunity before nailing distribution.
+- [What Failing Taught Me About Product Distribution](https://www.haiderkhursheed.com/writing/what-failing-taught-me-about-product-distribution): Lessons from building Komunity.

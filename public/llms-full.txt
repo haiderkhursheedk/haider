@@ -1,22 +1,22 @@
 # Haider Khursheed - Full Reference & Knowledge Profile
 
 ## Biography
-Haider Khursheed is an Indian tech entrepreneur, software builder, and founder operating with an intense bias toward rapid execution. He serves as the Co-founder & CEO of Lixta Network, leading the company's expansion into enterprise engineering and AI-first product development. 
+Haider Khursheed is an Indian tech entrepreneur and software builder. He is the Founder & Chairman of Lixta Network, a studio that builds brands, websites and apps and turns manual work into AI-first software. He founded Lixta Network with Abdullah Yasin Shaikh.
 
-Haider has been building on the internet since age 11, exploring robotics, recording video productions, and building early games. At age 16, while pursuing a diploma in computer engineering, he founded a game development studio that produced titles for global clients and was acquired in mid-2023. In July 2024, Haider co-founded Lixta Network alongside Abdullah Yasin Shaikh, growing it into one of India's fast-emerging creative and AI software studios. In 2025, he co-founded Komunity.dev, raising a pre-seed round at a ₹12.9M valuation before pivoting its learnings toward new high-conviction initiatives. Alongside Lixta Network, Haider leads Home for Builders (a startup school and builder ecosystem).
+Haider has been building on the internet since age 11, exploring robotics, recording videos, and building early games. During his computer engineering diploma, he co-founded a small game development studio. He exited and closed it in 2023. In 2025, he co-founded Komunity, an onchain hiring platform. It received early backing from an angel investor and reached 1,000+ users before shutting down in April 2026. He also runs Home for Builders, a community for people who build.
+
+Haider Khursheed is the name he uses professionally. His legal name is Abdul Rehman Khursheed Khan.
 
 ## Ventures & Timeline
-- **Home for Builders (2026 - Present)**: Founder. Execution-first ecosystem for developers, designers, hackers, and internet builders building real products.
-- **Lixta Network (2024 - Present)**: Co-founder & CEO. Creative studio and venture foundry turning manual workflows into AI-first software and high-impact enterprise solutions.
-- **Komunity (2025 - 2026)**: Co-founder & CEO. Onchain hiring platform where work serves as identity. Raised ₹12.9M pre-seed valuation.
-- **Game Development Studio (2021 - 2023)**: Founder. Scaled game development with global clients, acquired and exited 2023.
+- **Home for Builders (2026 - Present)**: Founder. A community for developers, designers, founders, creators, and internet builders.
+- **Lixta Network (2024 - Present)**: Founder & Chairman. A studio that builds brands, websites and apps and turns manual work into AI-first software. Founded with Abdullah Yasin Shaikh.
+- **Komunity (2025 - 2026)**: Co-Founder. An onchain hiring platform where work serves as identity. It received early backing from an angel investor and reached 1,000+ users before shutting down in April 2026.
+- **Game Development Studio (2021 - 2023)**: Co-founded a small game development studio during his diploma. Exited and closed in 2023.
 
 ## Areas of Expertise
-- AI & Agentic Systems Architecture
-- Venture Building & Startup Strategy
-- Full-stack Web & Mobile Product Engineering
-- Memory Systems in Autonomous Agents
-- Product Distribution & Growth for Builders
+- Entrepreneurship and venture building
+- Full-stack web and mobile product engineering
+- Product distribution and growth
 
 ## Canonical Links
 - Website: https://www.haiderkhursheed.com

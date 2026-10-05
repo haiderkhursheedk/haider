@@ -21,7 +21,7 @@ const LORE_TIMELINE: LoreBlock[] = [
     age: "@11",
     points: [
       { text: "Started exploring robotics. No tutorials, just raw curiosity." },
-      { text: "Sold pens, wrote books, rented my cycle to others. Always had an entrepreneurial streak." },
+      { text: "Sold pens, wrote books and rented my cycle. Always had an entrepreneurial streak." },
       { text: "Recorded my first video. Horrible quality, but I was obsessed." },
     ],
     images: [
@@ -40,9 +40,8 @@ const LORE_TIMELINE: LoreBlock[] = [
   {
     age: "@12",
     points: [
-      { text: "Played games, recorded them, and posted on my YouTube channel." },
+      { text: "Played games, recorded them and posted on my YouTube channel." },
       { text: "Built my first game inside a mobile app that let you create games within a game." },
-      { text: "Always curious about how machines and software work." },
       { text: "Built small robots and machines as a hobby." },
       { text: "Documented everything on my second YouTube channel. Still have it, but it's a bit embarrassing to share now." },
     ],
@@ -64,7 +63,7 @@ const LORE_TIMELINE: LoreBlock[] = [
     points: [
       { text: "Enrolled in a diploma program for Computer Engineering." },
       { text: "Started learning coding and design seriously." },
-      { text: "Founded my first game development studio." },
+      { text: "Co-founded a small game development studio during my diploma. Exited and closed in 2023." },
     ],
     images: [
       {
@@ -82,9 +81,8 @@ const LORE_TIMELINE: LoreBlock[] = [
   {
     age: "@18",
     points: [
-      { text: "Scaled the studio with global clients." },
-      { text: "Studio got acquired in mid-2023. It didn't scale much, but it was the best decision I made." },
-      { text: "Learned some ethical hacking on the side." },
+      { text: "The studio closed in 2023." },
+      { text: "Learned some android development and ethical hacking on the side." },
     ],
     images: [
       {
@@ -102,8 +100,8 @@ const LORE_TIMELINE: LoreBlock[] = [
   {
     age: "@19",
     points: [
-      { text: "Met Abdullah on LinkedIn. Co-founded ", link: "https://lixtanetwork.com", linkText: "Lixta Network" },
-      { text: "Turned manual workflows into AI-first software. Built a fast-growing creative studio." },
+      { text: "Met Abdullah Yasin Shaikh on LinkedIn and founded ", link: "https://lixtanetwork.com", linkText: "Lixta Network" },
+      { text: "A creative studio that builds brands, websites and apps." },
       { text: "Started attending tech events and networking." },
     ],
     images: [
@@ -123,8 +121,8 @@ const LORE_TIMELINE: LoreBlock[] = [
     age: "@20",
     points: [
       { text: "Co-founded Komunity, an onchain hiring platform for builders.", link: "https://komunity.dev", linkText: "Komunity.dev" },
-      { text: "Raised a pre-seed round at ₹12.9M valuation. Scaled to 1,000+ users." },
-      { text: "Classic mistake: scaled before product-market fit. Shut it down. Learned more from failure than any win." },
+      { text: "It received early backing from an angel investor and reached 1,000+ users before shutting down in April 2026." },
+      { text: "Classic mistake: scaled before product-market fit. Shut it down in April 2026. Learned more from the failure than from any win." },
     ],
     images: [
       {
@@ -142,9 +140,9 @@ const LORE_TIMELINE: LoreBlock[] = [
   {
     age: "@21",
     points: [
-      { text: "Scaling Lixta Network to an enterprise-level engineering and product company." },
-      { text: "Building Home for Builders (startup school).", link: "https://homeforbuilders.com", linkText: "Home for Builders" },
-      { text: "6,687 commits this year, while running companies. Hate jobs, love startups." },
+      { text: "Scaling Lixta Network, toward enterprise engineering and product work." },
+      { text: "Building Home for Builders, a community.", link: "https://homeforbuilders.com", linkText: "Home for Builders" },
+      { text: "I love startups." }
     ],
     images: [
       {
@@ -157,6 +155,7 @@ const LORE_TIMELINE: LoreBlock[] = [
         caption: "The Home for Builders effect",
         rotate: "2deg",
       },
+
     ],
   },
 ];
@@ -177,6 +176,9 @@ export default function AboutPage() {
         </h1>
         <p className="mt-2 text-sm text-neutral-500 max-w-md">
           The timeline of a curious child who turns ideas into fast shipping companies.
+        </p>
+        <p className="mt-4 text-sm text-neutral-400 max-w-xl">
+          Haider Khursheed is the name I use professionally. My legal name is Abdul Rehman Khursheed Khan.
         </p>
       </motion.div>
 
